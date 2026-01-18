@@ -7,7 +7,7 @@ Imports stdole
 Public Class rbn_aa_Addin00
 
     Private Sub rbn_aa_Addin00_Load(ByVal sender As System.Object, ByVal e As RibbonUIEventArgs) Handles MyBase.Load
-
+        MsgBox("Ribbon is loaded")
     End Sub
     '
 #Region "Support routines"
