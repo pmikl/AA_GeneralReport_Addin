@@ -1,0 +1,152 @@
+<a:custClrLst>
+<a:custClr name="RGB = 0,0,0">
+<a:srgbClr val="000000" />
+</a:custClr>
+<a:custClr name="RGB = 20,0,52">
+<a:srgbClr val="140034" />
+</a:custClr>
+<a:custClr name="RGB = 0,72,110">
+<a:srgbClr val="00486E" />
+</a:custClr>
+<a:custClr name="RGB = 0,64,22">
+<a:srgbClr val="004016" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 95,53,19">
+<a:srgbClr val="5F3513" />
+</a:custClr>
+<a:custClr name="RGB = 22,55,55">
+<a:srgbClr val="163737" />
+</a:custClr>
+<a:custClr name="RGB = 106,19,77">
+<a:srgbClr val="6A134D" />
+</a:custClr>
+<a:custClr name="RGB = 77,77,77">
+<a:srgbClr val="4D4D4D" />
+</a:custClr>
+<a:custClr name="RGB = 51,16,99">
+<a:srgbClr val="331063" />
+</a:custClr>
+<a:custClr name="RGB = 0,106,159">
+<a:srgbClr val="006A9F" />
+</a:custClr>
+<a:custClr name="RGB = 66,141,82">
+<a:srgbClr val="428D52" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 174,97,34">
+<a:srgbClr val="AE6122" />
+</a:custClr>
+<a:custClr name="RGB = 34,108,108">
+<a:srgbClr val="226C6C" />
+</a:custClr>
+<a:custClr name="RGB = 171,30,124">
+<a:srgbClr val="AB1E7C" />
+</a:custClr>
+<a:custClr name="RGB = 125,125,125">
+<a:srgbClr val="7D7D7D" />
+</a:custClr>
+<a:custClr name="RGB = 108,63,152">
+<a:srgbClr val="6C3F98" />
+</a:custClr>
+<a:custClr name="RGB = 123,189,214">
+<a:srgbClr val="7BBDD6" />
+</a:custClr>
+<a:custClr name="RGB = 132,206,136">
+<a:srgbClr val="84CE88" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 213,119,42">
+<a:srgbClr val="D5772A" />
+</a:custClr>
+<a:custClr name="RGB = 63,153,153">
+<a:srgbClr val="3F9999" />
+</a:custClr>
+<a:custClr name="RGB = 217,38,157">
+<a:srgbClr val="D9269D" />
+</a:custClr>
+<a:custClr name="RGB = 200,200,200">
+<a:srgbClr val="C8C8C8" />
+</a:custClr>
+<a:custClr name="RGB = 157,133,190">
+<a:srgbClr val="9D85BE" />
+</a:custClr>
+<a:custClr name="RGB = 185,209,229">
+<a:srgbClr val="B9D1E5" />
+</a:custClr>
+<a:custClr name="RGB = 187,226,176">
+<a:srgbClr val="BBE2B0" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 221,146,85">
+<a:srgbClr val="DD9255" />
+</a:custClr>
+<a:custClr name="RGB = 112,196,196">
+<a:srgbClr val="70C4C4" />
+</a:custClr>
+<a:custClr name="RGB = 234,134,200">
+<a:srgbClr val="EA86C8" />
+</a:custClr>
+<a:custClr name="RGB = 229,229,229">
+<a:srgbClr val="E5E5E5" />
+</a:custClr>
+<a:custClr name="RGB = 204,195,220">
+<a:srgbClr val="CCC3DC" />
+</a:custClr>
+<a:custClr name="RGB = 228,238,244">
+<a:srgbClr val="E4EEF4" />
+</a:custClr>
+<a:custClr name="RGB = 231,243,225">
+<a:srgbClr val="E7F3E1" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 255,255,255">
+<a:srgbClr val="FFFFFF" />
+</a:custClr>
+<a:custClr name="RGB = 232,181,140">
+<a:srgbClr val="E8B58C" />
+</a:custClr>
+<a:custClr name="RGB = 196,231,231">
+<a:srgbClr val="C4E7E7" />
+</a:custClr>
+<a:custClr name="RGB = 247,212,235">
+<a:srgbClr val="F7D4EB" />
+</a:custClr>
+</a:custClrLst>

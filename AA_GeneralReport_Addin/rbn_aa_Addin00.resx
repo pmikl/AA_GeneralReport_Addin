@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="grpStylesApp_StyleSet.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="grpStylesTools_to_DisplayDefault.SuperTip" xml:space="preserve">
+    <value>This button will set the font colour in the Cover Page and Back Contacts Page to the darker purple Display colour. This is to facilitate working with the document. When printing the lighter purple print colour will be used</value>
+  </data>
+  <data name="grpFigures_StyleForSubHeadings.SuperTip" xml:space="preserve">
+    <value>"Applies Figure style to selected text.  Use when multiple charts or figures have been pasted into a Figure placeholder and you want to apply a title or explanatory text to each chart separately within the placeholder."</value>
+  </data>
+  <data name="grpPlh_btn_buildCustomTable.SuperTip" xml:space="preserve">
+    <value>"Use to create a new table or to format an existing table with ACIL Allen styles.  The macro inserts caption, table units row and source as selected in dialog box.  If formatting an existing table, ensure there are no merged cells and that table is not framed."</value>
+  </data>
+  <data name="grpPlh_mnu_TblPlaceholders.SuperTip" xml:space="preserve">
+    <value>If you have a formatted table and only need the heading and source, use the options from this menu. The placeholder inserts a Table Heading with Caption and number. Beneath this is an empty paragraph over which you can paste a picture of a table. Under this empty paragraph add the table's source. Delete if not required.</value>
+  </data>
+  <data name="grpTbl_mnu_AAPlh_To_HalfPlh_Left.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing formatted Placeholder. &amp;#13;&amp;#13;This function will adjust the Placeholder to a left marging aligned (floating) half table. &amp;#13;&amp;#13;Text will flow around the right side</value>
+  </data>
+  <data name="grpTbl_mnu_AAPlh_To_HalfPlh_Right.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing formatted Placeholder. &amp;#13;&amp;#13;This function will adjust the Placeholder to a right margin aligned (floating) half table.&amp;#13;&amp;#13;Text will flow around the left side.</value>
+  </data>
+  <data name="tbPlh_mnu_convertPlhToHalfPage.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing (formatted) placeholder and select the left or right option... This button will float the placeholder so that text will flow around it... The placeholder will be aligned to the left or right margin depending on the option chosen.... Do not use this function on tables with a separate Caption and Source. If you use it on a table, it must be an encapsulated table.... Otherwise the 'Caption' and 'Source' will become disconnected from the Table</value>
+  </data>
+  <data name="grpTblsPlh_rapidFormat.SuperTip" xml:space="preserve">
+    <value>Place your cursor in a table created using standard Microsoft ribbon tools... This function will adjust the Table to the current AA format for general use and add an appropriate Caption at the top and Source at the bottom... The caption chosen is based on the numbering style of the section. If the numbering is 'roman numerals' then the caption is an 'ES' type. If simple 'arabic', or two part 'arabic' referencing 'Heading 1', then the caption is a 'Report body' type. If the numbering is two part 'appendix', then the caption chosen is an 'AP' type... This table format is suitable for documents that need to be 'Accessible'... It is NOT suitable for document sections that need tables that have text flowing around them or for tables that span mulitple columns in a multi column layout.</value>
+  </data>
+  <data name="grpTblsPlh_rapidFormat_Encapsulated.SuperTip" xml:space="preserve">
+    <value>Place your cursor in a table created using standard Microsoft ribbon tools. &amp;#13;&amp;#13;This function Will adjust the Table to the current AA format for floating tables and add an appropriate Caption in the top row and Source in the bottom row.&amp;#13;&amp;#13;The caption chosen is based on the numbering style of the section. If the numbering is 'roman numerals' then the caption is an 'ES' type. If simple 'arabic', or two part 'arabic' referencing 'Heading 1', then the caption is a 'Report body' type. If the numbering is two part 'appendix', then the caption chosen is an 'AP' type.&amp;#13;&amp;#13;This table format must NOT be used in documents that need to be 'Accessible'. &amp;#13;&amp;#13;It IS suitable for document sections that need tables that have text flowing around them or for tables that span mulitple columns in a multi column layout.</value>
+  </data>
+  <data name="grpBoxes_mnu_rapidFormat_EncapTbl_Force_LT.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing table. &amp;#13;&amp;#13;This function will adjust the Table to the current AA format for encapsulated tables and add the specified Caption at the top and Source at the bottom.</value>
+  </data>
+  <data name="grpBoxes_mnu_rapidFormat_EncapTbl_Force_ES.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing table. &amp;#13;&amp;#13;This function will adjust the Table to the current AA format for encapsulated tables and add the specified Caption at the top and Source at the bottom.</value>
+  </data>
+  <data name="grpBoxes_mnu_rapidFormat_EncapTbl_Force_Body.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing table. &amp;#13;&amp;#13;This function will adjust the Table to the current AA format for encapsulated tables and add the specified Caption at the top and Source at the bottom.</value>
+  </data>
+  <data name="grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP.SuperTip" xml:space="preserve">
+    <value>Place your cursor in an existing table. &amp;#13;&amp;#13;This function will adjust the Table to the current AA format for encapsulated tables and add the specified Caption at the top and Source at the bottom.</value>
+  </data>
+  <data name="grpTblsEdit_InsertColumnRight.SuperTip" xml:space="preserve">
+    <value>Place your cursor in a column of the target AA Table (Standard or Encapsulated). This function will insert a column to the right of the column that contains your cursor. During this operation a copy of the table is placed on the clipboard just in case you need to retrieve it.</value>
+  </data>
+  <data name="grpTblsEdit_InsertColumnLeft.SuperTip" xml:space="preserve">
+    <value>Place your cursor in a column of the target AA Table (Standard or Encapsulated). This function will insert a column to the left of the column that contains your cursor. During this operation a copy of the table is placed on the clipboard just in case you need to retrieve it.</value>
+  </data>
+  <data name="grpAATbls_mnu_editColumns.SuperTip" xml:space="preserve">
+    <value>The software will detect the table type and act accordingly. If something unexpected happens you can use the 'AA Table Actions &gt; Undo AA Table edit' function below, which will paste a 'prior' version of the table (held on the Clipboard) over the table holding your cursor.</value>
+  </data>
+  <data name="grpTblsEdit_UndoTableAction.SuperTip" xml:space="preserve">
+    <value>If you use this immediately after using the 'AA Column/Row' edit functions it will put the table back to the way it was by pasting the Clipboard copy of the prior table over the table containing your cursor... Make certain that your cursor is in the table that want to replace.</value>
+  </data>
+  <data name="grpReport_PlHFloat_lock_toMarginsLeftAndTop.SuperTip" xml:space="preserve">
+    <value>Will turn the selected Placeholder into a 'floating table' and lock it to a specific physical position on the page (relative to the margins). It will move to the same position on the next page when the paragraph it is anchored to moves to that page. This paragraph is in the first column, just above the height of the table. It can be identified because of a slightly abnormal space after... You can manually reposition the Placeholder if you want... Make certain that your selection point is in the Placeholder of interest</value>
+  </data>
+  <data name="grpReport_PlH_LockToParagraph.SuperTip" xml:space="preserve">
+    <value>Will turn the selected Placeholder into a 'floating table' and lock it to a specific paragraph. It will stay there unless it's parent paragraph moves... Once you have done this you can adjust the Placeholder width to span any columns you like... Make certain that your selection point is in the Placeholder of interest</value>
+  </data>
+  <data name="grpReport_PlH_LockToParagraphAndColumn.SuperTip" xml:space="preserve">
+    <value>Will turn the selected Placeholder into a 'floating table' and lock it to a column and a specific paragraph. It will stay there unless it's parent paragraph moves... Once you have done this you can adjust the Placeholder width to span any columns you like... Make certain that your selection point is in the Placeholder of interest.</value>
+  </data>
+  <data name="grpReport_PlH_FloatEdgeToEdge.SuperTip" xml:space="preserve">
+    <value>Will adjust the selected Placeholder's width to be left edge to right edge... Placeholders will only span multiple columns if they are floating tables. See the 'Lock' menu items above, normally you would use 'Lock to paragraph'... Make certain that your selection point is in the Placeholder of interest</value>
+  </data>
+  <data name="grpReport_PlH_TwoColumnWidth.SuperTip" xml:space="preserve">
+    <value>Will adjust the selected Placeholder's width to expand across two adjacent columns, the parent column and the one next to it... Make certain that your selection point is in the Placeholder of interest.</value>
+  </data>
+  <data name="grpReport_PlH_Handling.SuperTip" xml:space="preserve">
+    <value>The functions of this menu group allow you to setup Placeholders as floating tables.  Once 'locked', a Placeholder can span/float across multiple columns with text flowing around it. They can also be manually positioned and widened to suit specific requirements... The default condition for PlaceHolders is to be inserted 'inline' which means they sit nicely in a single column. Once you have used the 'lock' functions 'Placeholders' will no longer be 'inline'... This menu will only activate if your cursor is in a supported location of your report.</value>
+  </data>
+  <data name="grpEquations_Numbered.SuperTip" xml:space="preserve">
+    <value>Inserts numbered equation... To cross reference an equation use the standard approach. Select the 'References' tab, then in the 'Captions' panel select 'cross reference' and then select 'Equation' as the 'Reference type'.</value>
+  </data>
+  <metadata name="grpToc_TOC_insertSection.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grpToc_TOC_update.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="grpCoversToc_mnu2.SuperTip" xml:space="preserve">
+    <value>"This menu group allows you to insert a TOC section and to format it to 1, 2 or 3 levels..... When changing the levels of an existing TOC, you'll need to place your cursor in the TOC. Otherwise the software wont know where it is"</value>
+  </data>
+  <data name="grpCoversToc_mnu_Images.SuperTip" xml:space="preserve">
+    <value>"Make certain that your cursor is on the cover page, then choose insert picture from file or clipboard...  The selected picture will be re-sized or cropped and placed into the Cover Page small picture panel."</value>
+  </data>
+  <data name="grpImageHandling_submnu_FillBackPanel_SetTransparency.SuperTip" xml:space="preserve">
+    <value>"This menu item provides facilities to make the image back panel partially or fully transparent. You might choose this option for an 'effect', or you might choose it to increase the contrast between the text and back panel colour or image (especially relevant to 'Accessible' documents)."</value>
+  </data>
+  <data name="grpImageHandling_mnu_FillBackPanel.SuperTip" xml:space="preserve">
+    <value>"This menu item provides facilities to fill the back panel with an image or colour of your choosing. Make certain that your cursor is on a page with a back panel (colour or image)...Then choose insert picture from file or clipboard."</value>
+  </data>
+  <metadata name="grpRpt_mnu_CreateExecSummary.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grpRpt_mnu_NewChapter.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grpAppendix_newAppChapter_inFront_bblk.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="grpSectOptions_sect_InsertSectionBounded_Prt.SuperTip" xml:space="preserve">
+    <value>"This menu item inserts a blank 'bounded' Portrait section with standard margins (i.e. there is a section break before and after the insertion point) at the current cursor position. When finished the selection is at the beginning of the new bounded section. &amp;#13;&amp;#13;The section's header/footers and page numbering scheme are copied from the prior section, but are no longer linked to that section or to the following section. &amp;#13;&amp;#13;The simplest way to modify the headers/footers of this section is to use the 'Reset to Portrait or 'Reset to Landscape' buttons in 'Pages and Section&gt;Other Section Options' panel.. &amp;#13;&amp;#13;Or...&amp;#13;&amp;#13;You can use the 'Pages and Sections&gt;Clear Header/Footers' menu in Pages/Sections =&gt; Other Section Options together with the Portrait, Landscape or Page numbering options in the Fixes menu"</value>
+  </data>
+  <metadata name="grpSectOptions_hfs_restoreHF_AP.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grpReport_Columns_02_LeftWide.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="grpWhatsNew_Form.SuperTip" xml:space="preserve">
+    <value>This button will activate a form containing 'What's New' youTube links. The links are ordered top (latest) to bottom. The items (WaterMarks etc) that used to be here are on the new 'Finalise' tab, located to the right of the 'Pages and Sections' tab</value>
+  </data>
+  <data name="grpFixes_Repairs_remSpaces_indrCells.SuperTip" xml:space="preserve">
+    <value>Can be very useful when pasting a table from excel. Sometimes excel will leave remnant white space in the table entries... Just place your cursor somewhere in the table of interest and select this function</value>
+  </data>
+  <data name="grpFixes_ApplyAppNumbering.SuperTip" xml:space="preserve">
+    <value>Applies appendix prefix to the page number in this section.  Apendix prefixed page number restarts at 1... This formatting can only be undone by unchecking the 'Include chapter number' checkbox in the 'Page numbering dialog' (below)</value>
+  </data>
+  <data name="grp_Finalise_CrossRefError.SuperTip" xml:space="preserve">
+    <value>Will create a dialog that will show all orphaned cross references.. You can delete an orphaned cross reference from inside the dialog, or you can left click the cross reference in the dialog and be taken to that cross reference in the document</value>
+  </data>
+  <metadata name="grpWCAG_notesOnAccessibility.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="grpWCAG_convertThisDoc.SuperTip" xml:space="preserve">
+    <value>This function will save your current document and then rename it in the same directory as your original... You will need to save, close and then re-open the converted document in order to make the 'Accessibility' changes permanent.</value>
+  </data>
+  <data name="grpWCAG_mnu_SetTransparency.SuperTip" xml:space="preserve">
+    <value>This menu item provides facilities to make all the image back panels in the current document partially or fully transparent... In terms of 'Accessibility' you would normally use this to increase the contrast between the text and back panel colour or image.</value>
+  </data>
+  <data name="tabFin_mnu_AccessibilityTools.SuperTip" xml:space="preserve">
+    <value>This menu contains tools designed to support the production of 'Accessible' documents... A report is deemed 'Accessible' if it is passed as 'Accessible' by MicroSoft's in built 'Accessibility Checker. This can be found at 'Review &gt; Check Accessibility' or 'File &gt; Info &gt; Check for Issues &gt; Check Accessibility'.</value>
+  </data>
+  <data name="grpReport_PlH_convertToInline_findAllFloatingTables.SuperTip" xml:space="preserve">
+    <value>Will search for, and display all 'standard format' placeholders in the current document... Since 'Accessible' documents do NOT permit 'Floating' or 'Irregular' Tables. This form provides tools that allow you to go to, or convert a placeholder from floating to inline, or to find and easily go to Irregular tables.</value>
+  </data>
+  <data name="grpRbn_Downloads_mnu_00.SuperTip" xml:space="preserve">
+    <value>"This menu contains tools that allow you to download document resources from either the AA web site or Resources embedded in the Addin. These include, the current template, an example standard document and an example document that can be readily made to be 'Accessible'"</value>
+  </data>
+  <data name="grpMetaData_Remove_FromDoc.SuperTip" xml:space="preserve">
+    <value>"Warning this will impact 'document sharing'.. This function will remove the meta data from the Active Document and then does a 'SaveAs' to the same 'filename' with an additional tag noMetaData'. Meta data is document associated data that might be used by third parties to breach security."</value>
+  </data>
+  <data name="grpTest_pgNum_getTagStyleMap.SuperTip" xml:space="preserve">
+    <value> "This button will get the tag styles for all sections. It will quickly tell you whether the AA document structure is OK. All sections should have a tag style that is named 'tag_*'. If a section does not, then it is not a standard AA section and should be replaced using standard AA ribbon functions. A malformed document may not respond to the AA ribbon software."</value>
+  </data>
+  <data name="tabThms_mnu_Set_btn__applyAAThemeStylesTemplate.SuperTip" xml:space="preserve">
+    <value>Will apply the standard ACIL Allen theme and styles. But this does not make it a standard ACIL Allen document. For that we need to select the function below, where the themes and styles are reser and the standard template is attached to the document . At this point the ribbon will recognise the document and bring back the standard ACIL Allen ribbon functions if they are missing</value>
+  </data>
+  <metadata name="Menu5.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Menu2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="grpAppendix_newAppChapter_inFront.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
