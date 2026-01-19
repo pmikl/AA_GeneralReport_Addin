@@ -31,10 +31,10 @@
     </StartupObject>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>S:\Deploy-local\org_aa\word\GRpt_Addin\install\</PublishUrl>
-    <InstallUrl>\\wraith\software\Deploy-local\org_aa\word\GRpt_Addin\install\</InstallUrl>
+    <PublishUrl>S:\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</PublishUrl>
+    <InstallUrl>\\wraith\software\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.385</ApplicationVersion>
+    <ApplicationVersion>1.0.0.489</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>

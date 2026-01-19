@@ -279,24 +279,32 @@ Public Class cGlobals
         Dim fld As Word.Field
         Dim myDoc As Word.Document
         Dim hf As Word.HeaderFooter
+        Dim rng As Word.Range
         '
-
-        myDoc = Me.glb_get_wrdActiveDoc()
-        '
-        For Each sect In myDoc.Sections
+        Try
+            myDoc = Me.glb_get_wrdActiveDoc()
+            rng = myDoc.Application.Selection.Range         'Preserve the current selection
             '
-            Try
-                For Each hf In sect.Footers
-                    If hf.Exists Then
-                        For Each fld In hf.Range.Fields
-                            If fld.Type = WdFieldType.wdFieldStyleRef Then fld.Update()
-                        Next
-                    End If
-                Next
-            Catch ex As Exception
+            For Each sect In myDoc.Sections
+                '
+                Try
+                    For Each hf In sect.Footers
+                        If hf.Exists Then
+                            For Each fld In hf.Range.Fields
+                                If fld.Type = WdFieldType.wdFieldStyleRef Then fld.Update()
+                            Next
+                        End If
+                    Next
+                Catch ex2 As Exception
 
-            End Try
-        Next
+                End Try
+            Next
+            '
+            rng.Select()                                    'Reselect
+        Catch ex As Exception
+
+        End Try
+
     End Sub
 
     '
@@ -1874,6 +1882,31 @@ finis:
         End Try
         '
     End Function
+    '
+    ''' <summary>
+    ''' This method is used to detremine if a document is empty. It checks the main body,
+    ''' headers and footers for content. If any of these contain text, it returns False.
+    ''' </summary>
+    ''' <param name="myDoc"></param>
+    ''' <returns></returns>
+    Public Function glb_doc_isEmptyAndNotSaved(ByRef myDoc As Word.Document) As Boolean
+        Dim objHFMgr As New cHeaderFooterMgr()
+        Dim rslt As Boolean = True
+        Dim hasNoText As Boolean = False
+        Dim isNotSaved As Boolean = False
+        Dim bodyText As String = myDoc.Content.Text.Trim()
+        Dim hfHasNoContent As Boolean = False
+        '
+        If myDoc.Path = "" Then isNotSaved = True
+        If bodyText.Length = 0 Then hasNoText = True
+        hfHasNoContent = Not objHFMgr.hf_hfs_haveContent(myDoc)
+        '
+        rslt = isNotSaved And hasNoText And hfHasNoContent
+        '
+        Return rslt
+
+    End Function
+
     '
     ''' <summary>
     ''' Ths method will check the doc type (AA Std or not) of the current Active Document and 

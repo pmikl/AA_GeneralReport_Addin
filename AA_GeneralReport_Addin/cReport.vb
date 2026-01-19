@@ -423,7 +423,7 @@ finis:
         Dim objStylesMgr As New cStylesManager()
         Dim objTOCMgr As New cTOCMgr()
         Dim objViewMgr As New cViewManager()
-        Dim myDoc As Word.Document
+        Dim myDoc, residualDoc As Word.Document
         Dim rng As Word.Range
         'Dim srcDocFileInfo As System.IO.FileInfo
         Dim docSourceFullName As String
@@ -434,10 +434,12 @@ finis:
         Dim Interval As TimeSpan
         Dim strElapsedTime As String
         '
-        Me.objGlobals.glb_screen_update(True)
+        Me.objGlobals.glb_screen_update(False)
         '
         placeBehind = True
-        myDoc = Me.objGlobals.glb_get_wrdActiveDoc()
+        'myDoc = Me.objGlobals.glb_get_wrdActiveDoc()
+        residualDoc = objGlobals.glb_get_wrdActiveDoc()
+
         '
         Me.objGlobals.glb_cursors_setToWait()
         'Mechanism to adjust styles without having to chnage the template
@@ -454,9 +456,14 @@ finis:
             '
             objScratchMgr.scratch_delete_Directory_Scratch()
             '
+            'Get rid of the empty residual
+            If objGlobals.glb_doc_isEmptyAndNotSaved(residualDoc) Then
+                residualDoc.Saved = True
+                residualDoc.Close(WdSaveOptions.wdDoNotSaveChanges)
+            End If
+            '
             Select Case rptMode
                 Case "Prt"
-                    'strRptMode = Me.modeLong
                     strRptMode = Me.Rpt_Mode_SetAs_Std()
                     '
                     'Adjust styles
@@ -467,6 +474,7 @@ finis:
                     objViewMgr.vw_change_ColumnsAndRows(3, 1, 69)
                     'objViewMgr.vw_change_toPageFitBestFit(myDoc)
                     '
+
                 Case "Lnd"
                     'strRptMode = Me.modeLongLandscape
                     strRptMode = Me.Rpt_Mode_SetAsLandScape()
@@ -507,12 +515,11 @@ finis:
             myDoc.BuiltInDocumentProperties("Comments") = "© ACIL Allen " + Now().Year.ToString("D4")
             '
             objGlobals.glb_view_setToPrintLayout()
-            objCpMgr.cp_sel_MoveToTitle(myDoc.Sections.First, True)
+            'objCpMgr.cp_sel_MoveToTitle(myDoc.Sections.First, True)
             '
             'objPrint.colour_display_ToEasyView(myDoc)
             'objStyles.style_copy_StylesFromTemplate(objGlobals.glb_get_wrdActiveDoc)
             '
-            objGlobals.glb_doc_checkDocType_ActivateTab()
             '
             'endTime = TimeOfDay()
             'Interval = endTime - startTime
@@ -526,12 +533,21 @@ finis:
             objGlobals.glb_screen_update(True)
             '
             MsgBox("The Report build is complete (" + strElapsedTime + ")")
+            objGlobals.glb_doc_checkDocType_ActivateTab()
             '
-            '
-            rng = objCpMgr.cp_sel_MoveToTitle(myDoc.Sections.First, True)
-            objGlobals.glb_screen_update(True)
+            Select Case rptMode
+                Case "Brf"
+                    rng = myDoc.Sections.First.Range.Tables.Item(1).Range.Cells.Item(1).Range
+                    rng = rng.Paragraphs.Item(1).Range
+                    rng.MoveEnd(WdUnits.wdCharacter, -1)
+                Case Else
+                    rng = objCpMgr.cp_sel_MoveToTitle(myDoc.Sections.First, True)
+            End Select
             '
             rng.Select()
+            '
+            objGlobals.glb_screen_update(True)
+            '
 
         Catch ex As Exception
             objGlobals.glb_view_setToPrintLayout()

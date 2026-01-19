@@ -49,6 +49,10 @@
             handleFirstDocumentOpen(wordApp.Documents(1))
         End If
         '
+        '
+        '****
+        'Try  Private Sub rbn_aa_Addin00_Load istead of timer. This event fires when the ribbon is loaded
+        '
         'Timer delay to allow the ribbon to load so that my Pgs tab activation code will work
         myTimer.Interval = 2000 ' 1.5 seconds delay
         AddHandler myTimer.Tick, AddressOf on_timer_tick
@@ -281,9 +285,9 @@
         myTimer.Stop()
         '
         Try
-            objGlobals.ctrl_tab_Activate(objGlobals._strTabId_PagesAndSections)
+            'objGlobals.ctrl_tab_Activate(objGlobals._strTabId_PagesAndSections)
         Catch ex As Exception
-            System.Diagnostics.Debug.WriteLine("Failed to activate tab_aa_PagesAndSections: " & ex.Message)
+            'System.Diagnostics.Debug.WriteLine("Failed to activate tab_aa_PagesAndSections: " & ex.Message)
         End Try
         '
     End Sub

@@ -7,7 +7,9 @@ Imports stdole
 Public Class rbn_aa_Addin00
 
     Private Sub rbn_aa_Addin00_Load(ByVal sender As System.Object, ByVal e As RibbonUIEventArgs) Handles MyBase.Load
-        MsgBox("Ribbon is loaded")
+
+        'objGlobals.ctrl_tab_Activate(objGlobals._strTabId_PagesAndSections)
+
     End Sub
     '
 #Region "Support routines"
@@ -3065,7 +3067,7 @@ finis:
         objSectMgr.objGlobals.glb_screen_update(True)
         objGlobals.glb_cursors_setToNormal()
         '
-        objWrkAround.wrk_fix_forCursorRace()
+        'objWrkAround.wrk_fix_forCursorRace()
         'objSectMgr.objGlobals.glb_get_wrdApp.ScreenUpdating = True
 
     End Sub
@@ -5864,7 +5866,7 @@ loop4:
         '
     End Sub
 
-    Private Sub PIF_PgS_dlg(sender As Object, e As RibbonControlEventArgs) Handles grpRpt_CoversAndTOC.DialogLauncherClick
+    Private Sub PIF_PgS_dlg(sender As Object, e As RibbonControlEventArgs) Handles grp_AA_ThemeandHome.DialogLauncherClick
         Dim obj As New cGetDotNetVersion()
         Dim frm As frm_About
         '
@@ -5935,7 +5937,13 @@ loop4:
         '
         Select Case e.Control.Id
             Case "tbHome_grpLetter_standaloneLetter"
-                myDoc = objGlobals.glb_get_wrdApp.Documents.Add()
+                myDoc = objGlobals.glb_get_wrdActiveDoc
+                objGlobals.glb_screen_update(False)
+                '
+                If Not objGlobals.glb_doc_isEmptyAndNotSaved(myDoc) Then
+                    myDoc = objGlobals.glb_get_wrdApp.Documents.Add(Visible:=False)
+                End If
+
                 myDoc.AttachedTemplate = objGlobals.glb_getTmpl_FullName()
                 objThmMgr.thm_Set_ThemeToAAStd_fromFile(objGlobals.glb_get_wrdActiveDoc)
                 objRptMgr.Rpt_Styles_resetStyles_fromTemplate(True)
@@ -5955,8 +5963,18 @@ loop4:
                 rng.Select()
                 '
                 objRpt.Rpt_delete_ReportSections()
+                myDoc.ActiveWindow.Visible = True
+                '
+                'Select Name
+                rng = myDoc.Sections.First.Range.Paragraphs.Item(4).Range
+                rng.MoveEnd(WdUnits.wdCharacter, -1)
+                rng.Select()
+                '
+
                 '
                 objStylesMgr.glb_doc_checkDocType_ActivateTab(objGlobals._strTabId_PagesAndSections)
+                objGlobals.glb_screen_update(False)
+
 
             Case "grpLetter_insertLetter"
                 rng = objGlobals.glb_get_wrdActiveDoc().Sections.First.Range
@@ -5972,7 +5990,13 @@ loop4:
                 rng.Select()
                 '
             Case "tbHome_grpLetter_standaloneMemo"
-                myDoc = objGlobals.glb_get_wrdApp.Documents.Add()
+                myDoc = objGlobals.glb_get_wrdActiveDoc
+                objGlobals.glb_screen_update(False)
+                '
+                If Not objGlobals.glb_doc_isEmptyAndNotSaved(myDoc) Then
+                    myDoc = objGlobals.glb_get_wrdApp.Documents.Add(Visible:=False)
+                End If
+
                 myDoc.AttachedTemplate = objGlobals.glb_getTmpl_FullName()
                 objThmMgr.thm_Set_ThemeToAAStd_fromFile(objGlobals.glb_get_wrdActiveDoc)
                 objRptMgr.Rpt_Styles_resetStyles_fromTemplate(True)
@@ -5992,6 +6016,15 @@ loop4:
                 rng.Select()
                 '
                 objRpt.Rpt_delete_ReportSections()
+                myDoc.ActiveWindow.Visible = True
+                '
+                '
+                'Select Recipient
+                rng = myDoc.Sections.First.Range.Tables.Item(1).Range.Cells.Item(3).Range
+                rng = rng.Paragraphs.Item(1).Range
+                rng.MoveEnd(WdUnits.wdCharacter, -1)
+                rng.Select()
+                '
                 '
                 objStylesMgr.glb_doc_checkDocType_ActivateTab(objGlobals._strTabId_PagesAndSections)
 

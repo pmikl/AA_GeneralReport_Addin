@@ -9,6 +9,40 @@ Public Class cHeaderFooterMgr
     End Sub
     '
     ''' <summary>
+    ''' This method will rturn true if the headers or footer of myDoc have any content
+    ''' at all
+    ''' </summary>
+    ''' <param name="myDoc"></param>
+    ''' <returns></returns>
+    Public Function hf_hfs_haveContent(myDoc As Word.Document) As Boolean
+
+        For Each sec As Word.Section In myDoc.Sections
+
+            'Check all headers
+            For Each hdr As Word.HeaderFooter In sec.Headers
+                If hdr.Exists Then
+                    If hdr.Range.Text.Trim().Length > 0 Then Return True
+                    If hdr.Range.Tables.Count > 0 Then Return True
+                    If hdr.Range.ShapeRange.Count > 0 Then Return True
+                End If
+            Next
+
+            'Check all footers
+            For Each ftr As Word.HeaderFooter In sec.Footers
+                If ftr.Exists Then
+                    If ftr.Range.Text.Trim().Length > 0 Then Return True
+                    If ftr.Range.Tables.Count > 0 Then Return True
+                    If ftr.Range.ShapeRange.Count > 0 Then Return True
+                End If
+            Next
+
+        Next
+
+        Return False
+        '
+    End Function
+    '
+    ''' <summary>
     ''' This method will return a list of tag styles, ordered by section
     ''' </summary>
     ''' <param name="myDoc"></param>
