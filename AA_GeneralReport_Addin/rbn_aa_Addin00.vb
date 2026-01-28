@@ -6225,4 +6225,48 @@ loop4:
     Private Sub tbHome_btn_Help_Click(sender As Object, e As RibbonControlEventArgs) Handles tbHome_btn_Help.Click
         MsgBox("Help information in the form of documents and/or videos can be made available under this button")
     End Sub
+
+    Private Sub grp_AAHomeTools_Click(sender As Object, e As RibbonControlEventArgs) Handles btn_update_Fields.Click
+        Dim objGlobals As New cGlobals()
+        Dim objTOCMgr As New cTOCMgr()
+        Dim myDoc As Word.Document
+        Dim rngCurrent As Word.Range
+        '
+        myDoc = objGlobals.glb_get_wrdActiveDoc()
+        rngCurrent = objGlobals.glb_get_wrdApp().Selection.Range        'Get current selection range
+        '
+        objGlobals.glb_screen_update(False)
+        '
+        Try
+            Select Case e.Control.Id
+            '
+                Case "btn_update_Fields"
+                    'Dim f As Field
+                    'For Each f In objGlobals.glb_get_wrdActiveDoc().Fields
+                    'If f.Type = WdFieldType.wdFieldStyleRef Or f.Type = WdFieldType.wdFieldPage Or f.Type = WdFieldType.wdFieldSequence Then
+                    'f.Update() 'Could use the following but not going to: If (f.result.style = "Chpt - Context" Or f.result.style = "App - Context") Then ...
+                    'End If
+                    '
+                    'If f.Type = WdFieldType.wdfield
+                    'Next f
+                    '
+                    'Simulate print preview to force update of all fields
+                    myDoc.PrintPreview()
+                    myDoc.ClosePrintPreview()
+                    '
+                    myDoc.Fields.Update()
+                    '
+                    objTOCMgr.toc_update_TOCs(myDoc)
+                    objTOCMgr.toc_upDate_TOFs()
+                    '
+            End Select
+            '
+        Catch ex As Exception
+
+        End Try
+        '
+        rngCurrent.Select()                                             'Re-establish the selection
+        objGlobals.glb_screen_update(True)
+        '
+    End Sub
 End Class
