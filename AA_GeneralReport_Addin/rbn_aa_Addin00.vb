@@ -2648,7 +2648,7 @@ finis:
         '
     End Sub
     '
-    Private Sub PIF_PgS_grpReport_Click(sender As Object, e As RibbonControlEventArgs) Handles grpRpt_mnu_btn_NewChapter_inFront_bblk.Click, grpRpt_mnu_btn_NewChapter_behind_bblk.Click, grpReprt_btn_buildLandscapeReport.Click, grpReport_btn_buildPortraitReport.Click, grpReport_btn_buildAABrief.Click, grpReport_mnu01_SelectedText.Click, grpReport_mnu01_SelectedTblCells.Click, grpReport_mnu_CaseStudies_RecolourLogo_toWhite.Click, grpReport_mnu_CaseStudies_RecolourLogo_Reset.Click, grpReport_mnu_CaseStudies_RecolourFooter_toWhite.Click, grpReport_mnu_CaseStudies_RecolourFooter_Reset.Click, grpReport_mnu_CaseStudies_HalfPage.Click, grpReport_mnu_CaseStudies_FullPage.Click, grpReport_mnu_CaseStudies_CaseStudyHeading.Click, tabPgs_grpRpt_btn_buildPrtReport_sw.Click, tabPgs_grpRpt_btn_buildLndReport_sw.Click, tabPgs_grpRpt_btn_buildBrfReport_sw.Click, grpReport_btn_newDivider_Chpt_bblk.Click, grpReport_btn_newDivider_Chpt.Click, grpRpt_mnu_btn_NewChapter_inFront.Click, grpRpt_mnu_btn_NewChapter_behind.Click, grpReport_PlH_convertToInline_findAllFloatingTables_2.Click, grpReport_PlH_convertToInline_findAllFloatingTables.Click, grpReport_tbHome_btn_buildPortraitReport.Click, grpReport_tbHome_btn_buildLandscapeReport.Click, grpReport_tbHome_btn_buildAABrief.Click
+    Private Sub PIF_PgS_grpReport_Click(sender As Object, e As RibbonControlEventArgs) Handles grpRpt_mnu_btn_NewChapter_inFront_bblk.Click, grpRpt_mnu_btn_NewChapter_behind_bblk.Click, grpReprt_btn_buildLandscapeReport.Click, grpReport_btn_buildPortraitReport.Click, grpReport_btn_buildAABrief.Click, grpReport_mnu01_SelectedText.Click, grpReport_mnu01_SelectedTblCells.Click, grpReport_mnu_CaseStudies_RecolourLogo_toWhite.Click, grpReport_mnu_CaseStudies_RecolourLogo_Reset.Click, grpReport_mnu_CaseStudies_RecolourFooter_toWhite.Click, grpReport_mnu_CaseStudies_RecolourFooter_Reset.Click, grpReport_mnu_CaseStudies_HalfPage.Click, grpReport_mnu_CaseStudies_FullPage.Click, grpReport_mnu_CaseStudies_CaseStudyHeading.Click, tabPgs_grpRpt_btn_buildPrtReport_sw.Click, tabPgs_grpRpt_btn_buildLndReport_sw.Click, tabPgs_grpRpt_btn_buildBrfReport_sw.Click, grpReport_btn_newDivider_Chpt_bblk.Click, grpReport_btn_newDivider_Chpt.Click, grpRpt_mnu_btn_NewChapter_inFront.Click, grpRpt_mnu_btn_NewChapter_behind.Click, grpReport_PlH_convertToInline_findAllFloatingTables_2.Click, grpReport_PlH_convertToInline_findAllFloatingTables.Click, grpReport_tbHome_btn_buildPortraitReport.Click, grpReport_tbHome_btn_buildLandscapeReport.Click, grpReport_tbHome_btn_buildAABrief.Click, btn_buildReport_Prt_SW.Click, btn_buildReport_Lnd_SW.Click, btn_buildReport_Brf_SW.Click
         Dim objSectMgr As New cSectionMgr()
         Dim objChpt As New cChptBody()
         Dim objViewMgr As New cViewManager()
@@ -2667,6 +2667,7 @@ finis:
         Dim objLogoMgr As New cLogosMgr()
         Dim objPlhBase As New cPlHBase()
         Dim objCaseStudyMgr As cCaseStudyMgr
+        Dim objThmMgr As cThemeMgr
         '
         'Dim frmPicker As frm_colorPicker
         'Dim frmPicker As frm_colorPicker02
@@ -2739,14 +2740,24 @@ finis:
 
                 'End If
                 '
-            Case "tabPgs_grpRpt_btn_buildPrtReport_sw"
+            Case "tabPgs_grpRpt_btn_buildPrtReport_sw", "btn_buildReport_Prt_SW"
                 objRptMgr = New cReport()
                 '
                 If objMsgMgr.deleteAllMessage Then
                     strRptMode = objRptMgr.Rpt_Mode_SetAs_Std()
                     '
-                    objRptMgr.Rpt_build_newReport_PrtandLnd()              'Software build
+                    'Add theme, styles and attach the template
+                    objThmMgr = New cThemeMgr()
+                    objThmMgr.thm_Set_ThemeToAAStd_fromFile(objGlobals.glb_get_wrdActiveDoc)
+                    objRptMgr.Rpt_Styles_resetStyles_fromTemplate(True)
+                    'objStylesMgr.glb_doc_checkDocType_ActivateTab(objGlobals._strTabId_PagesAndSections)
+                    '
+                    'Now that all is prepared, let's build it
+                    objRptMgr.Rpt_build_newReport_PrtandLnd()                'Software build
                     'objRptMgr.Rpt_build_NewReport_PrtandLnd_Copy()          'Build from embedded example
+                    '
+                    objStylesMgr.glb_doc_checkDocType_ActivateTab(objGlobals._strTabId_PagesAndSections)
+
                 Else
 
                 End If
@@ -2767,15 +2778,25 @@ finis:
 
                 'End If
                 '
-            Case "tabPgs_grpRpt_btn_buildLndReport_sw"
+            Case "tabPgs_grpRpt_btn_buildLndReport_sw", "btn_buildReport_Lnd_SW"
                 objRptMgr = New cReport()
                 '
                 If objMsgMgr.deleteAllMessage Then
                     strRptMode = objRptMgr.Rpt_Mode_SetAsLandScape()
                     '
+                    'Add theme, styles and attach the template
+                    objThmMgr = New cThemeMgr()
+                    objThmMgr.thm_Set_ThemeToAAStd_fromFile(objGlobals.glb_get_wrdActiveDoc)
+                    objRptMgr.Rpt_Styles_resetStyles_fromTemplate(True)
+                    objStylesMgr.style_extend_TemplateStyles()                                                                      'Refresh the styles
+                    objRptMgr.Rpt_styles_Upgrade_for_ReportType(objGlobals.glb_get_wrdActiveDoc, objRptMgr.rpt_isLnd)        'Upgrade/chnage depending on report mode
+                    objTOCMgr.TOC_Styles_AdjustForReportMode(objRptMgr.rpt_isLnd)                                                     'Force the style for the Brief
+                    '
+                    '
                     objRptMgr.Rpt_build_newReport_PrtandLnd()              'Software build
                     'objRptMgr.Rpt_build_NewReport_PrtandLnd_Copy("Lnd")     'Build from embedded example
-
+                    '
+                    objStylesMgr.glb_doc_checkDocType_ActivateTab(objGlobals._strTabId_PagesAndSections)
                     'objpgNumMgr.pgNum_setBody_numFormat(objSectMgr.objGlobals.glb_get_wrdActiveDoc(), "std")
                 Else
 
@@ -2787,13 +2808,23 @@ finis:
 
                 objWrkAround.wrk_fix_forCursorRace()
                 '
-            Case "tabPgs_grpRpt_btn_buildBrfReport_sw"
+            Case "tabPgs_grpRpt_btn_buildBrfReport_sw", "btn_buildReport_Brf_SW"
                 objRptMgr = New cReport()
                 '
                 If objMsgMgr.deleteAllMessage Then
                     'strRptMode = objRptMgr.Rpt_Mode_SetAsShort()
                     strRptMode = objRptMgr.Rpt_Mode_SetAsAABrief()
                     objPropsMgr.prps_del_customProperty("pgNumberFormat", objGlobals.glb_get_wrdActiveDoc())
+                    '
+                    '
+                    'Add theme, styles and attach the template
+                    objThmMgr = New cThemeMgr()
+                    objThmMgr.thm_Set_ThemeToAAStd_fromFile(objGlobals.glb_get_wrdActiveDoc)
+                    objRptMgr.Rpt_Styles_resetStyles_fromTemplate(True)
+                    objStylesMgr.style_extend_TemplateStyles()                                                                      'Refresh the styles
+                    objRptMgr.Rpt_styles_Upgrade_for_ReportType(objGlobals.glb_get_wrdActiveDoc, objRptMgr.rpt_isBrief)        'Upgrade/chnage depending on report mode
+                    objTOCMgr.TOC_Styles_AdjustForReportMode(objRptMgr.rpt_isBrief)                                                     'Force the style for the Brief
+                    '
                     '
                     objRptMgr.Rpt_build_newAABrief_PrtandLnd()             'Software build
                     'objRptMgr.Rpt_build_NewReport_PrtandLnd_Copy("Brf")     'Build from embedded example
@@ -5838,7 +5869,7 @@ loop4:
                     '
 
                 Case "grpTst_LoadFromWeb_getStylesGuide_Accessible"
-                    strFilePath = objFileMgr.file_get_resourcesFromWeb("StylesGuide-AccessibleAware.docx", "exampleDoc", strWebLocation)
+                    strFilePath = objFileMgr.file_get_resourcesFromWeb("StylesGuide_Accessible.docx", "exampleDoc", strWebLocation)
                     '
                     Select Case strFilePath
                         Case "cancel"
@@ -6258,6 +6289,8 @@ loop4:
                     '
                     objTOCMgr.toc_update_TOCs(myDoc)
                     objTOCMgr.toc_upDate_TOFs()
+                    '
+                    MsgBox("All fields updated using a simulated 'Print Preview'")
                     '
             End Select
             '

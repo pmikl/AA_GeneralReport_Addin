@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  A strongly-typed resource class, for looking up localized strings, etc.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "18.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -96,26 +96,6 @@ Namespace My.Resources
         Friend ReadOnly Property AA_ReportPrt_Example() As Byte()
             Get
                 Dim obj As Object = ResourceManager.GetObject("AA_ReportPrt_Example", resourceCulture)
-                Return CType(obj,Byte())
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Byte[].
-        '''</summary>
-        Friend ReadOnly Property AA_StylesGuide() As Byte()
-            Get
-                Dim obj As Object = ResourceManager.GetObject("AA_StylesGuide", resourceCulture)
-                Return CType(obj,Byte())
-            End Get
-        End Property
-        
-        '''<summary>
-        '''  Looks up a localized resource of type System.Byte[].
-        '''</summary>
-        Friend ReadOnly Property AA_StylesGuide_Accessible() As Byte()
-            Get
-                Dim obj As Object = ResourceManager.GetObject("AA_StylesGuide_Accessible", resourceCulture)
                 Return CType(obj,Byte())
             End Get
         End Property

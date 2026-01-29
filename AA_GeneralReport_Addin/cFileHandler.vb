@@ -242,14 +242,14 @@ Public Class cFileHandler
                 strnewFileName = tokens(0) + ".thmx"
                 '
             Case "AA_StylesGuide"
-                docSourceFile = My.Resources.AA_StylesGuide
-                tokens = strnewFileName.Split(".")
-                strnewFileName = tokens(0) + ".docx"
+                'docSourceFile = My.Resources.AA_StylesGuide
+                'tokens = strnewFileName.Split(".")
+                'strnewFileName = tokens(0) + ".docx"
                 '
             Case "AA_StylesGuide_Accessible"
-                docSourceFile = My.Resources.AA_StylesGuide_Accessible
-                tokens = strnewFileName.Split(".")
-                strnewFileName = tokens(0) + ".docx"
+                'docSourceFile = My.Resources.AA_StylesGuide_Accessible
+                'tokens = strnewFileName.Split(".")
+                'strnewFileName = tokens(0) + ".docx"
                 '
 
             Case Else

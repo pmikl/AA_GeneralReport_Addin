@@ -34,7 +34,7 @@
     <PublishUrl>S:\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</PublishUrl>
     <InstallUrl>\\wraith\software\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.491</ApplicationVersion>
+    <ApplicationVersion>1.0.0.501</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
@@ -419,8 +419,6 @@
     <None Include="Resources\AA_ReportBrf_Example.dotx" />
     <None Include="Resources\AA_ReportLnd_Example.dotx" />
     <None Include="Resources\AA_ReportPrt_Example.dotx" />
-    <None Include="Resources\AA_StylesGuide.docx" />
-    <None Include="Resources\AA_StylesGuide_Accessible.docx" />
     <None Include="ThisAddIn.Designer.xml">
       <DependentUpon>ThisAddIn.vb</DependentUpon>
     </None>

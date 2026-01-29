@@ -700,6 +700,9 @@
         Me.btn_ApplyStdTheme_Manually = Me.Factory.CreateRibbonButton
         Me.mnu_makeStyles = Me.Factory.CreateRibbonMenu
         Me.btn_styles_makeTableText = Me.Factory.CreateRibbonButton
+        Me.btn_buildReport_Prt_SW = Me.Factory.CreateRibbonButton
+        Me.btn_buildReport_Lnd_SW = Me.Factory.CreateRibbonButton
+        Me.btn_buildReport_Brf_SW = Me.Factory.CreateRibbonButton
         Me.tab_aa_Styles.SuspendLayout()
         Me.grp_Styles_AAThemes.SuspendLayout()
         Me.grpStyles_CoverPage.SuspendLayout()
@@ -6041,6 +6044,7 @@
         Me.grpTst_LoadFromResources_getStylesGuide.ScreenTip = "Download Styles Guide"
         Me.grpTst_LoadFromResources_getStylesGuide.ShowImage = True
         Me.grpTst_LoadFromResources_getStylesGuide.SuperTip = "When activated this tool will download a 'Styles Guide' document."
+        Me.grpTst_LoadFromResources_getStylesGuide.Visible = False
         '
         'grpTst_LoadFromResources_getStylesGuide_Accessible
         '
@@ -6049,6 +6053,7 @@
         Me.grpTst_LoadFromResources_getStylesGuide_Accessible.OfficeImageId = "BevelShapeGallery"
         Me.grpTst_LoadFromResources_getStylesGuide_Accessible.ScreenTip = "Accessible Styles Guide (from resources)"
         Me.grpTst_LoadFromResources_getStylesGuide_Accessible.ShowImage = True
+        Me.grpTst_LoadFromResources_getStylesGuide_Accessible.Visible = False
         '
         'grpTst_LoadFromWeb_getStylesGuide
         '
@@ -6059,7 +6064,6 @@
         Me.grpTst_LoadFromWeb_getStylesGuide.ShowImage = True
         Me.grpTst_LoadFromWeb_getStylesGuide.SuperTip = """This is a test tool. When activated it downloads the standard styles guide from " &
     "the AA web site."""
-        Me.grpTst_LoadFromWeb_getStylesGuide.Visible = False
         '
         'grpTst_LoadFromWeb_getStylesGuide_Accessible
         '
@@ -6069,7 +6073,6 @@
         Me.grpTst_LoadFromWeb_getStylesGuide_Accessible.ScreenTip = "Download Accessible Styles Guide"
         Me.grpTst_LoadFromWeb_getStylesGuide_Accessible.ShowImage = True
         Me.grpTst_LoadFromWeb_getStylesGuide_Accessible.SuperTip = "Download Accessible Styles Guide"
-        Me.grpTst_LoadFromWeb_getStylesGuide_Accessible.Visible = False
         '
         'Separator53
         '
@@ -6329,10 +6332,13 @@
         '
         Me.tbHome_mnu_CreateReport.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
         Me.tbHome_mnu_CreateReport.Items.Add(Me.grpReport_tbHome_btn_buildPortraitReport)
+        Me.tbHome_mnu_CreateReport.Items.Add(Me.btn_buildReport_Prt_SW)
         Me.tbHome_mnu_CreateReport.Items.Add(Me.Separator92)
         Me.tbHome_mnu_CreateReport.Items.Add(Me.grpReport_tbHome_btn_buildLandscapeReport)
+        Me.tbHome_mnu_CreateReport.Items.Add(Me.btn_buildReport_Lnd_SW)
         Me.tbHome_mnu_CreateReport.Items.Add(Me.Separator93)
         Me.tbHome_mnu_CreateReport.Items.Add(Me.grpReport_tbHome_btn_buildAABrief)
+        Me.tbHome_mnu_CreateReport.Items.Add(Me.btn_buildReport_Brf_SW)
         Me.tbHome_mnu_CreateReport.Label = "Create Report or Brief"
         Me.tbHome_mnu_CreateReport.Name = "tbHome_mnu_CreateReport"
         Me.tbHome_mnu_CreateReport.OfficeImageId = "AnimationTriggerAddMenu"
@@ -6344,6 +6350,8 @@
         Me.grpReport_tbHome_btn_buildPortraitReport.Name = "grpReport_tbHome_btn_buildPortraitReport"
         Me.grpReport_tbHome_btn_buildPortraitReport.OfficeImageId = "SizeToGridAccess"
         Me.grpReport_tbHome_btn_buildPortraitReport.ShowImage = True
+        Me.grpReport_tbHome_btn_buildPortraitReport.SuperTip = "Template build. It's fast but relies on underlying templates being swapped in and" &
+    " out"
         '
         'Separator92
         '
@@ -6355,6 +6363,8 @@
         Me.grpReport_tbHome_btn_buildLandscapeReport.Name = "grpReport_tbHome_btn_buildLandscapeReport"
         Me.grpReport_tbHome_btn_buildLandscapeReport.OfficeImageId = "SizeToGridAccess"
         Me.grpReport_tbHome_btn_buildLandscapeReport.ShowImage = True
+        Me.grpReport_tbHome_btn_buildLandscapeReport.SuperTip = "Template build. It's fast but relies on underlying templates being swapped in and" &
+    " out"
         '
         'Separator93
         '
@@ -6362,10 +6372,12 @@
         '
         'grpReport_tbHome_btn_buildAABrief
         '
-        Me.grpReport_tbHome_btn_buildAABrief.Label = "New ACIL allen Brief"
+        Me.grpReport_tbHome_btn_buildAABrief.Label = "New ACIL Allen Brief"
         Me.grpReport_tbHome_btn_buildAABrief.Name = "grpReport_tbHome_btn_buildAABrief"
         Me.grpReport_tbHome_btn_buildAABrief.OfficeImageId = "SizeToGridAccess"
         Me.grpReport_tbHome_btn_buildAABrief.ShowImage = True
+        Me.grpReport_tbHome_btn_buildAABrief.SuperTip = "Template build. It's fast but relies on underlying templates being swapped in and" &
+    " out"
         '
         'Separator90
         '
@@ -6786,6 +6798,31 @@
         Me.btn_styles_makeTableText.Name = "btn_styles_makeTableText"
         Me.btn_styles_makeTableText.OfficeImageId = "BevelShapeGallery"
         Me.btn_styles_makeTableText.ShowImage = True
+        '
+        'btn_buildReport_Prt_SW
+        '
+        Me.btn_buildReport_Prt_SW.Label = "New Portrait Report (sw)"
+        Me.btn_buildReport_Prt_SW.Name = "btn_buildReport_Prt_SW"
+        Me.btn_buildReport_Prt_SW.OfficeImageId = "SizeToGridAccess"
+        Me.btn_buildReport_Prt_SW.ScreenTip = "New Portrait Report"
+        Me.btn_buildReport_Prt_SW.ShowImage = True
+        Me.btn_buildReport_Prt_SW.SuperTip = "This is a software build. Takes longer, but less depenedent on templates"
+        '
+        'btn_buildReport_Lnd_SW
+        '
+        Me.btn_buildReport_Lnd_SW.Label = "New Landscape Report (sw)"
+        Me.btn_buildReport_Lnd_SW.Name = "btn_buildReport_Lnd_SW"
+        Me.btn_buildReport_Lnd_SW.OfficeImageId = "SizeToGridAccess"
+        Me.btn_buildReport_Lnd_SW.ShowImage = True
+        Me.btn_buildReport_Lnd_SW.SuperTip = "This is a software build. Takes longer, but less dependent on templates"
+        '
+        'btn_buildReport_Brf_SW
+        '
+        Me.btn_buildReport_Brf_SW.Label = "New ACIL Allen Brief (sw)"
+        Me.btn_buildReport_Brf_SW.Name = "btn_buildReport_Brf_SW"
+        Me.btn_buildReport_Brf_SW.OfficeImageId = "SizeToGridAccess"
+        Me.btn_buildReport_Brf_SW.ShowImage = True
+        Me.btn_buildReport_Brf_SW.SuperTip = "This is a software build. Takes longer, but less dependent on templates"
         '
         'rbn_aa_Addin00
         '
@@ -7534,6 +7571,9 @@
     Friend WithEvents tbHome_btn_Help As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents btn_update_Fields As Microsoft.Office.Tools.Ribbon.RibbonButton
     Friend WithEvents Separator95 As Microsoft.Office.Tools.Ribbon.RibbonSeparator
+    Friend WithEvents btn_buildReport_Prt_SW As Microsoft.Office.Tools.Ribbon.RibbonButton
+    Friend WithEvents btn_buildReport_Lnd_SW As Microsoft.Office.Tools.Ribbon.RibbonButton
+    Friend WithEvents btn_buildReport_Brf_SW As Microsoft.Office.Tools.Ribbon.RibbonButton
 End Class
 
 Partial Class ThisRibbonCollection

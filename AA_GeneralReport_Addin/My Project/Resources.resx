@@ -130,12 +130,6 @@
   <data name="AA_ReportPrt_Example" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AA_ReportPrt_Example.dotx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AA_StylesGuide" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AA_StylesGuide.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="AA_StylesGuide_Accessible" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\AA_StylesGuide_Accessible.docx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="AA_Theme_Base_with_CustClrs_20250926" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\AA Theme Base with CustClrs-20250926.thmx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>

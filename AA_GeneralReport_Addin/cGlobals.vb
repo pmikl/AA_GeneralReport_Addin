@@ -133,8 +133,8 @@ Public Class cGlobals
         Me.glb_var_TemplatesDir_alt = Me.glb_getDir_documentsLocal()
         Me.glb_var_TemplateFileName = "AA GeneralReport.dotx"
         '
-        Me.glb_var_strWebSiteId = "acilallen.com.au"                    'mikl.net.au, acilallen.com.au
-        'Me.glb_var_strWebSiteId = "mikl.net.au"                        'mikl.net.au, acilallen.com.au
+        'Me.glb_var_strWebSiteId = "acilallen.com.au"                    'mikl.net.au, acilallen.com.au
+        Me.glb_var_strWebSiteId = "mikl.net.au"                        'mikl.net.au, acilallen.com.au
         Me.glb_var_strSoftwareType = "addin"                            'addin, template
 
     End Sub
