@@ -34,7 +34,7 @@
     <PublishUrl>S:\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</PublishUrl>
     <InstallUrl>\\wraith\software\Deploy-local\org_aa\word\GeneralReport_Addin\install_fullPKI\</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>1.0.0.501</ApplicationVersion>
+    <ApplicationVersion>1.0.0.502</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
@@ -351,10 +351,10 @@
     <Compile Include="frm_transparency.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="My Project\frm_WhatsNew.Designer.vb">
+    <Compile Include="frm_WhatsNew.Designer.vb">
       <DependentUpon>frm_WhatsNew.vb</DependentUpon>
     </Compile>
-    <Compile Include="My Project\frm_WhatsNew.vb">
+    <Compile Include="frm_WhatsNew.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="rbn_aa_Addin00.Designer.vb">
@@ -399,7 +399,7 @@
     <EmbeddedResource Include="frm_transparency.resx">
       <DependentUpon>frm_transparency.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="My Project\frm_WhatsNew.resx">
+    <EmbeddedResource Include="frm_WhatsNew.resx">
       <DependentUpon>frm_WhatsNew.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="rbn_aa_Addin00.resx">
@@ -502,7 +502,7 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>96E534A727FBFF4CF51DBD3F7B5C8F46C3354738</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>1BD85AF489ECC6DEAEF6FAF9FD1ABBED04BB0047</ManifestCertificateThumbprint>
   </PropertyGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- Include additional build rules for an Office application add-in. -->
