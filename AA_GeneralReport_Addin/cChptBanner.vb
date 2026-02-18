@@ -980,7 +980,7 @@ finis:
         End If
         '
 
-        objFldsMgr.updateSequenceNumbers_Chapters()
+        objFldsMgr.flds_update_SequenceNumbers_Chapters()
 finis:
         Return tbl
         '

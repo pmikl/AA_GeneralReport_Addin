@@ -5,8 +5,7 @@ Public Class cFieldsMgr
 
     End Sub
     '
-    '
-    Public Sub upDateTableOfFigures()
+    Public Sub flds_upDate_TOFigures()
         Dim j As Integer
         Dim myDoc As Word.Document
         Dim objGlobals As New cGlobals()
@@ -19,6 +18,20 @@ Public Class cFieldsMgr
 
     End Sub
     '
+    Public Sub flds_upDate_TOContents()
+        Dim j As Integer
+        Dim myDoc As Word.Document
+        Dim objGlobals As New cGlobals()
+        '
+        myDoc = objGlobals.glb_get_wrdActiveDoc()
+        '
+        For j = 1 To myDoc.TablesOfContents.Count
+            myDoc.TablesOfContents(j).Update()
+        Next j
+
+    End Sub
+
+    '
 #Region "Cross Reference Fields"
     '
     ''' <summary>
@@ -29,7 +42,7 @@ Public Class cFieldsMgr
     ''' <param name="showErrorCrossRefsOnly"></param>
     ''' <param name="doFldUpdate"></param>
     ''' <returns></returns>
-    Public Function CrossReference_List(ByRef myDoc As Word.Document, showErrorCrossRefsOnly As Boolean, doFldUpdate As Boolean) As List(Of Word.Field)
+    Public Function flds_CrossReference_List(ByRef myDoc As Word.Document, showErrorCrossRefsOnly As Boolean, doFldUpdate As Boolean) As List(Of Word.Field)
         Dim flds As Word.Fields
         Dim errorFlds As New List(Of Word.Field)
         Dim fld As Word.Field
@@ -73,7 +86,7 @@ Public Class cFieldsMgr
         Return errorFlds
     End Function
 
-    Public Sub CrossReference_changeStyle()
+    Public Sub flds_CrossReference_changeStyle()
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim strFldCode As String
@@ -115,7 +128,7 @@ Public Class cFieldsMgr
     '
 #Region "Update Fields"
     '
-    Public Sub updateCrossReferenceFields()
+    Public Sub flds_update_CrossReferenceFields()
         'Dim flds As Word.Fields
         Dim objGlobals As New cGlobals()
         Dim myDoc As Word.Document
@@ -125,7 +138,7 @@ Public Class cFieldsMgr
         '
 
         myDoc = objGlobals.glb_get_wrdActiveDoc
-        Me.updateCrossReferenceFields(myDoc)
+        Me.flds_update_CrossReferenceFields(myDoc)
         'flds = myDoc.Range.Fields
         'For Each fld In flds
         'If fld.Type = WdFieldType.wdFieldRef Then
@@ -137,7 +150,7 @@ Public Class cFieldsMgr
     End Sub
     '
     '
-    Public Sub updateCrossReferenceFields(ByRef myDoc As Word.Document)
+    Public Sub flds_update_CrossReferenceFields(ByRef myDoc As Word.Document)
         Dim flds As Word.Fields
         Dim fld As Word.Field
         '
@@ -156,60 +169,60 @@ Public Class cFieldsMgr
     End Sub
 
     '
-    Public Sub updateSequenceNumbers_Appendix()
-        Call Me.updateSequenceNumbers("SEQ AppNum")
+    Public Sub flds_update_SequenceNumbers_Appendix()
+        Call Me.flds_update_SequenceNumbers("SEQ AppNum")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Appendix(ByRef rng As Word.Range)
-        Call Me.updateSequenceNumbers("SEQ AppNum")
+    Public Sub flds_update_SequenceNumbers_Appendix(ByRef rng As Word.Range)
+        Call Me.flds_update_SequenceNumbers("SEQ AppNum")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes()
-        Call Me.updateSequenceNumbers("SEQ Box")
-        Call Me.updateStyleRefs("STYLEREF 1")
+    Public Sub flds_update_SequenceNumbers_Boxes()
+        Call Me.flds_update_SequenceNumbers("SEQ Box")
+        Call Me.flds_update_StyleRefs("STYLEREF 1")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_Ap()
-        Call Me.updateSequenceNumbers("SEQ Box_AP")
-        Call Me.updateStyleRefs("STYLEREF 9")
+    Public Sub flds_update_SequenceNumbers_Boxes_Ap()
+        Call Me.flds_update_SequenceNumbers("SEQ Box_AP")
+        Call Me.flds_update_StyleRefs("STYLEREF 9")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_ES()
-        Call Me.updateSequenceNumbers("SEQ Box_ES")
+    Public Sub flds_update_SequenceNumbers_Boxes_ES()
+        Call Me.flds_update_SequenceNumbers("SEQ Box_ES")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_LT()
-        Call Me.updateSequenceNumbers("SEQ Box_LT")
+    Public Sub flds_update_SequenceNumbers_Boxes_LT()
+        Call Me.flds_update_SequenceNumbers("SEQ Box_LT")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_KeyFindings()
-        Call Me.updateSequenceNumbers("SEQ Key_Finding")
+    Public Sub flds_update_SequenceNumbers_Boxes_KeyFindings()
+        Call Me.flds_update_SequenceNumbers("SEQ Key_Finding")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_KeyFindings_ES()
-        Call Me.updateSequenceNumbers("SEQ KeyFinding_ES")
+    Public Sub flds_update_SequenceNumbers_Boxes_KeyFindings_ES()
+        Call Me.flds_update_SequenceNumbers("SEQ KeyFinding_ES")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_Recommendation()
-        Call Me.updateSequenceNumbers("SEQ Recommendation")
+    Public Sub flds_update_SequenceNumbers_Boxes_Recommendation()
+        Call Me.flds_update_SequenceNumbers("SEQ Recommendation")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Boxes_Recommendation_ES()
-        Call Me.updateSequenceNumbers("SEQ Recommendation_ES")
+    Public Sub flds_update_SequenceNumbers_Boxes_Recommendation_ES()
+        Call Me.flds_update_SequenceNumbers("SEQ Recommendation_ES")
     End Sub
     '
 
     '
-    Public Sub updateSequenceNumbers_Chapters()
-        Call Me.updateSequenceNumbers("SEQ ChptNum")
+    Public Sub flds_update_SequenceNumbers_Chapters()
+        Call Me.flds_update_SequenceNumbers("SEQ ChptNum")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Figures()
-        Call Me.updateSequenceNumbers("SEQ Figure")
-        Call Me.updateStyleRefs("STYLEREF 1")
+    Public Sub flds_update_SequenceNumbers_Figures()
+        Call Me.flds_update_SequenceNumbers("SEQ Figure")
+        Call Me.flds_update_StyleRefs("STYLEREF 1")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Figures_WorkAround()
+    Public Sub flds_update_SequenceNumbers_Figures_WorkAround()
         Dim objTools As New cTools()
         '
         'Insert a Figure Caption to force the document into a Figure update mode that
@@ -219,44 +232,44 @@ Public Class cFieldsMgr
         '
         'Now Update the sequence number of all Figure Types. theinserted caption would
         'have upset the main body sequence numbers
-        Me.updateSequenceNumbers("SEQ Figure")
-        Call Me.updateStyleRefs("STYLEREF 1")
+        Me.flds_update_SequenceNumbers("SEQ Figure")
+        Call Me.flds_update_StyleRefs("STYLEREF 1")
         '
     End Sub
     '
-    Public Sub updateSequenceNumbers_Figures_Ap()
-        Call Me.updateSequenceNumbers("SEQ Figure_AP")
-        Call Me.updateStyleRefs("STYLEREF 9")
+    Public Sub flds_update_SequenceNumbers_Figures_Ap()
+        Call Me.flds_update_SequenceNumbers("SEQ Figure_AP")
+        Call Me.flds_update_StyleRefs("STYLEREF 9")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Figures_ES()
-        Call Me.updateSequenceNumbers("SEQ Figure_ES")
+    Public Sub flds_update_SequenceNumbers_Figures_ES()
+        Call Me.flds_update_SequenceNumbers("SEQ Figure_ES")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Figures_LT()
-        Call Me.updateSequenceNumbers("SEQ Figure_LT")
+    Public Sub flds_update_SequenceNumbers_Figures_LT()
+        Call Me.flds_update_SequenceNumbers("SEQ Figure_LT")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Parts()
-        Call Me.updateSequenceNumbers("SEQ NumList")
+    Public Sub flds_update_SequenceNumbers_Parts()
+        Call Me.flds_update_SequenceNumbers("SEQ NumList")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Tables()
-        Call Me.updateSequenceNumbers("SEQ Table")
-        Call Me.updateStyleRefs("STYLEREF 1")
+    Public Sub flds_update_SequenceNumbers_Tables()
+        Call Me.flds_update_SequenceNumbers("SEQ Table")
+        Call Me.flds_update_StyleRefs("STYLEREF 1")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Tables_AP()
-        Call Me.updateSequenceNumbers("SEQ Table")
-        Call Me.updateStyleRefs("STYLEREF 9")
+    Public Sub flds_update_SequenceNumbers_Tables_AP()
+        Call Me.flds_update_SequenceNumbers("SEQ Table")
+        Call Me.flds_update_StyleRefs("STYLEREF 9")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Tables_ES()
-        Call Me.updateSequenceNumbers("SEQ Table_ES")
+    Public Sub flds_update_SequenceNumbers_Tables_ES()
+        Call Me.flds_update_SequenceNumbers("SEQ Table_ES")
     End Sub
     '
-    Public Sub updateSequenceNumbers_Tables_LT()
-        Call Me.updateSequenceNumbers("SEQ Table_LT")
+    Public Sub flds_update_SequenceNumbers_Tables_LT()
+        Call Me.flds_update_SequenceNumbers("SEQ Table_LT")
     End Sub
     '
 #End Region
@@ -268,7 +281,7 @@ Public Class cFieldsMgr
     ''' This method will update the sequence numbers identified by 'targetFldCode'
     ''' </summary>
     ''' <param name="targetFldCode"></param>
-    Public Sub updateSequenceNumbers(targetFldCode As String)
+    Public Sub flds_update_SequenceNumbers(targetFldCode As String)
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim strFldCode As String
@@ -299,7 +312,7 @@ Public Class cFieldsMgr
     ''' </summary>
     ''' <param name="targetFldCode"></param>
     ''' <param name="rng"></param>
-    Public Sub updateSequenceNumbers(targetFldCode As String, ByRef rng As Word.Range)
+    Public Sub flds_update_SequenceNumbers(targetFldCode As String, ByRef rng As Word.Range)
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim strFldCode As String
@@ -322,7 +335,7 @@ Public Class cFieldsMgr
     ''' <summary>
     ''' This method will update all sequence fields in the Active Document
     ''' </summary>
-    Public Sub updateSequenceNumbers_All()
+    Public Sub flds_update_SequenceNumbers_All()
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim objGlobals As New cGlobals()
@@ -341,7 +354,7 @@ Public Class cFieldsMgr
     ''' This method will update the style refs identified in 'targetFldCode'
     ''' </summary>
     ''' <param name="targetFldCode"></param>
-    Public Sub updateStyleRefs(targetFldCode As String)
+    Public Sub flds_update_StyleRefs(targetFldCode As String)
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim strFldCode As String
@@ -368,7 +381,7 @@ Public Class cFieldsMgr
     ''' <summary>
     ''' This method will update all style refs in the document
     ''' </summary>
-    Public Sub updateStyleRefs_All()
+    Public Sub flds_update_StyleRefs_All()
         Dim flds As Word.Fields
         Dim fld As Word.Field
         Dim objGlobals As New cGlobals()
@@ -457,11 +470,37 @@ Public Class cFieldsMgr
         rng.Select()
         '
     End Sub
+    '
+    ''' <summary>
+    ''' This method will force a fields update by doing a rapid Print Preview. The code will
+    ''' copy the current selection range, do a Print Preview and then close it. This forces
+    ''' Word to update all fields including those in headers and footers. Finally it will
+    ''' re-establish the original selection range
+    ''' </summary>
+    ''' <param name="myDoc"></param>
+    Public Sub flds_updateFields_AllviaPrintPreview(ByRef myDoc As Word.Document)
+        'may not do fields in header/footer
+        Dim rng As Range
+        '
+        'Get the current range so that we can re-establish it at the end
+        rng = Globals.ThisAddIn.Application.Selection.Range
+        '
+        myDoc.PrintPreview()
+        myDoc.ClosePrintPreview()
+        '
+        'myDoc.Fields.Update()
+        '
+        'objTOCMgr.toc_update_TOCs(myDoc)
+        'objTOCMgr.toc_upDate_TOFs()
+        '
+        rng.Select()
+        '
+    End Sub
 
 
 #End Region
     '
-    Public Sub upDateCommentsField()
+    Public Sub flds_upDate_CommentsField()
         Dim objGlobals As New cGlobals()
         Dim myDoc As Word.Document
         '

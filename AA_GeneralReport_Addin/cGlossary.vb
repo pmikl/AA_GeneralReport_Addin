@@ -319,7 +319,7 @@ Public Class cGlossary
 
         End Select
         '
-        objFldsMgr.updateSequenceNumbers_Chapters()
+        objFldsMgr.flds_update_SequenceNumbers_Chapters()
         objTOCMgr.toc_update_TOCs(myDoc)
         '
         Return rng

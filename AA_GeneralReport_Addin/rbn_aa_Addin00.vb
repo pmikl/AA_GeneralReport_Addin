@@ -1687,45 +1687,45 @@ Public Class rbn_aa_Addin00
                 End If
                 '
             Case "grpViewTools_Refresh_mnu_Chapters"
-                objFlds.updateSequenceNumbers_Chapters()
-                objFlds.updateSequenceNumbers_Appendix()
-                objFlds.updateSequenceNumbers_Tables()
+                objFlds.flds_update_SequenceNumbers_Chapters()
+                objFlds.flds_update_SequenceNumbers_Appendix()
+                objFlds.flds_update_SequenceNumbers_Tables()
                 '
                 objMsgMgr.UpdateFunctionIsFinished()
                 '
             Case "grpViewTools_Refresh_mnu_Parts"
-                objFlds.updateSequenceNumbers_Parts()
+                objFlds.flds_update_SequenceNumbers_Parts()
                 objMsgMgr.UpdateFunctionIsFinished()
                 '
             Case "grpViewTools_Refresh_mnu_Tables"
-                objFlds.updateSequenceNumbers_Tables()
-                objFlds.updateSequenceNumbers_Tables_AP()
-                objFlds.updateSequenceNumbers_Tables_ES()
-                objFlds.updateSequenceNumbers_Tables_LT()
+                objFlds.flds_update_SequenceNumbers_Tables()
+                objFlds.flds_update_SequenceNumbers_Tables_AP()
+                objFlds.flds_update_SequenceNumbers_Tables_ES()
+                objFlds.flds_update_SequenceNumbers_Tables_LT()
                 objMsgMgr.UpdateFunctionIsFinished()
                 '
             Case "grpViewTools_Refresh_mnu_Figures"
                 'objFlds.updateSequenceNumbers_Figures_WorkAround()
-                objFlds.updateSequenceNumbers_Figures()
-                objFlds.updateSequenceNumbers_Figures_Ap()
-                objFlds.updateSequenceNumbers_Figures_ES()
+                objFlds.flds_update_SequenceNumbers_Figures()
+                objFlds.flds_update_SequenceNumbers_Figures_Ap()
+                objFlds.flds_update_SequenceNumbers_Figures_ES()
                 objMsgMgr.UpdateFunctionIsFinished()
                 '
             Case "grpViewTools_Refresh_mnu_Boxes"
-                objFlds.updateSequenceNumbers_Boxes()
-                objFlds.updateSequenceNumbers_Boxes_Ap()
-                objFlds.updateSequenceNumbers_Boxes_ES()
-                objFlds.updateSequenceNumbers_Boxes_KeyFindings()
-                objFlds.updateSequenceNumbers_Boxes_KeyFindings_ES()
-                objFlds.updateSequenceNumbers_Boxes_Recommendation()
-                objFlds.updateSequenceNumbers_Boxes_Recommendation_ES()
-                objFlds.updateSequenceNumbers_Boxes_LT()
+                objFlds.flds_update_SequenceNumbers_Boxes()
+                objFlds.flds_update_SequenceNumbers_Boxes_Ap()
+                objFlds.flds_update_SequenceNumbers_Boxes_ES()
+                objFlds.flds_update_SequenceNumbers_Boxes_KeyFindings()
+                objFlds.flds_update_SequenceNumbers_Boxes_KeyFindings_ES()
+                objFlds.flds_update_SequenceNumbers_Boxes_Recommendation()
+                objFlds.flds_update_SequenceNumbers_Boxes_Recommendation_ES()
+                objFlds.flds_update_SequenceNumbers_Boxes_LT()
                 objMsgMgr.UpdateFunctionIsFinished()
                 '
             Case "grpViewTools_Refresh_mnu_All"
                 objFlds.flds_update_StyleRefs_Hfs()
-                objFlds.updateSequenceNumbers_All()
-                objFlds.updateStyleRefs_All()
+                objFlds.flds_update_SequenceNumbers_All()
+                objFlds.flds_update_StyleRefs_All()
                 '
                 objTOCMgr.toc_update_TOCs(myDoc)
                 objTOCMgr.toc_upDate_TOFs()
@@ -3570,20 +3570,20 @@ finis:
 
                 Case "grpTbls_convertTabletoES"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_ES(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_ES()
+                    objFlds.flds_update_SequenceNumbers_Tables_ES()
 
                 Case "grpTbls_convertTabletoStd"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Report(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables()
+                    objFlds.flds_update_SequenceNumbers_Tables()
 
                 Case "grpTbls_convertTabletoApp"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Appendix(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_AP()
+                    objFlds.flds_update_SequenceNumbers_Tables_AP()
 
         '*******
                 Case "grpTbls_convertTabletoLT"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Letter(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_LT()
+                    objFlds.flds_update_SequenceNumbers_Tables_LT()
 
                 Case "grpTbls_convertTabletoX"
                 Case Else
@@ -4430,48 +4430,48 @@ finis:
                 Case "grpTblsPlh_HeadingAndSource"
                     '
                     objPlHTbl.PlhTbl_insert_Table("Table")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_HeadingAndSource_17p5"
                     '                    '
                     objPlHTbl.PlhTbl_insert_TableWide("Table")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_HeadingAndSourceApp"
                     '
                     objPlHTbl.PlhTbl_insert_Table("Table_AP")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_HeadingAndSourceApp_17p5"
                     '                    '
                     objPlHTbl.PlhTbl_insert_TableWide("Table_AP")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_HeadingAndSourceES"
                     '
                     objPlHTbl.PlhTbl_insert_Table("Table_ES")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_HeadingAndSourceES_17p5"
                     '                    '
                     objPlHTbl.PlhTbl_insert_TableWide("Table_ES")
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_CaptionAndHeading"
                     rng = objPlHTbl.Plh_Captions_InsertCaptions("Table", objGlobals.glb_get_wrdSelRng, True)
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     'rng = objChptPlhMgr.Plh_Captions_InsertCaptions("Table_AP", Globals.ThisDocument.Application.Selection.Range, True)
                     rng.Select()
                     '
                 Case "grpTblsPlh_CaptionAndHeadingApp"
                     rng = objPlHTbl.Plh_Captions_InsertCaptions("Table_AP", objGlobals.glb_get_wrdSelRng, True)
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     'rng = objChptPlhMgr.Plh_Captions_InsertCaptions("Table_AP", Globals.ThisDocument.Application.Selection.Range, True)
                     rng.Select()
                     '
                 Case "grpTblsPlh_CaptionAndHeadingES"
                     rng = objPlHTbl.Plh_Captions_InsertCaptions("Table_ES", objGlobals.glb_get_wrdSelRng, True)
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     'rng = objChptPlhMgr.Plh_Captions_InsertCaptions("Table_AP", Globals.ThisDocument.Application.Selection.Range, True)
                     rng.Select()
                     '
@@ -4480,7 +4480,7 @@ finis:
             '
                 Case "grpTblsPlh_DeleteTable"
                     objTblMgr.tbl_delete_table()
-                    objFlds.upDateTableOfFigures()
+                    objFlds.flds_upDate_TOFigures()
                     '
                 Case "grpTblsPlh_AddTable_Simple"
                     dlg_InsertTable.Show()
@@ -4705,20 +4705,20 @@ finis:
 
                 Case "grpTbls_convertTabletoES"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_ES(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_ES()
+                    objFlds.flds_update_SequenceNumbers_Tables_ES()
 
                 Case "grpTbls_convertTabletoStd"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Report(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables()
+                    objFlds.flds_update_SequenceNumbers_Tables()
 
                 Case "grpTbls_convertTabletoApp"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Appendix(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_AP()
+                    objFlds.flds_update_SequenceNumbers_Tables_AP()
 
         '*******
                 Case "grpTbls_convertTabletoLT"
                     objPlHTable.PlhTbl_Captions_ConvertCaptionsTo_Letter(objGlobals.glb_get_wrdSelRngAll)
-                    objFlds.updateSequenceNumbers_Tables_LT()
+                    objFlds.flds_update_SequenceNumbers_Tables_LT()
 
                 Case "grpTbls_convertTabletoX"
                 Case Else
@@ -5362,19 +5362,19 @@ loop4:
 
                 Case "grpBoxes_ToES"
                     objPlHBox.PlhBox_Captions_ConvertBoxCaptionsTo_ES(objGlobals.glb_get_wrdSel.Range)
-                    objFldsMgr.updateSequenceNumbers_Boxes_ES()
+                    objFldsMgr.flds_update_SequenceNumbers_Boxes_ES()
                     '
                 Case "grpBoxes_ToBox1"
                     objPlHBox.PlhBox_Captions_ConvertBoxCaptionsTo_Report(objGlobals.glb_get_wrdSel.Range)
-                    objFldsMgr.updateSequenceNumbers_Boxes()
+                    objFldsMgr.flds_update_SequenceNumbers_Boxes()
                     '
                 Case "grpBoxes_ToApp"
                     objPlHBox.PlhBox_Captions_ConvertBoxCaptionsTo_Appendix(objGlobals.glb_get_wrdSelRngAll)
-                    objFldsMgr.updateSequenceNumbers_Boxes_Ap()
+                    objFldsMgr.flds_update_SequenceNumbers_Boxes_Ap()
 
                 Case "grpBoxes_ToLT"
                     objPlHBox.PlhBox_Captions_ConvertBoxCaptionsTo_Letter(objGlobals.glb_get_wrdApp.Selection.Range)
-                    objFldsMgr.updateSequenceNumbers_Boxes_LT()
+                    objFldsMgr.flds_update_SequenceNumbers_Boxes_LT()
 
                 Case "grpBoxes_deleteBoxContent"
                     objPlHBox.PlhBox_Exmaples_InsertBoxText(True)
@@ -5460,18 +5460,18 @@ loop4:
                     '
                 Case "grpFigures_convertToES"
                     objFigMgr.PlhFig_Captions_ConvertBoxCaptionsTo_ES(objSectMgr.objGlobals.glb_get_wrdSelRngAll)
-                    objFldsMgr.updateSequenceNumbers_Figures_ES()
+                    objFldsMgr.flds_update_SequenceNumbers_Figures_ES()
                 Case "grpFigures_convertToStd"
                     objFigMgr.PlhFig_Captions_ConvertBoxCaptionsTo_Report(objSectMgr.objGlobals.glb_get_wrdSelRngAll)
-                    objFldsMgr.updateSequenceNumbers_Figures()
+                    objFldsMgr.flds_update_SequenceNumbers_Figures()
                 Case "grpFigures_convertToApp"
                     objFigMgr.PlhFig_Captions_ConvertBoxCaptionsTo_Appendix(objSectMgr.objGlobals.glb_get_wrdSelRngAll)
-                    objFldsMgr.updateSequenceNumbers_Figures_Ap()
+                    objFldsMgr.flds_update_SequenceNumbers_Figures_Ap()
 
         '*******
                 Case "grpFigures_convertToLT"
                     objFigMgr.PlhFig_Captions_ConvertBoxCaptionsTo_Letter(objSectMgr.objGlobals.glb_get_wrdSelRngAll)
-                    objFldsMgr.updateSequenceNumbers_Figures_LT()
+                    objFldsMgr.flds_update_SequenceNumbers_Figures_LT()
                 Case Else
             End Select
 

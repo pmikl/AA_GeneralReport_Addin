@@ -69,7 +69,7 @@ Public Class cMaths
             MsgBox("Unknow error.. Try inserting the equation editor manually")
         End Try
         '
-        objFldsMgr.updateSequenceNumbers("Equation")
+        objFldsMgr.flds_update_SequenceNumbers("Equation")
         '
         Return tbl
         '

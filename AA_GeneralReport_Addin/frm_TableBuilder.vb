@@ -278,12 +278,12 @@ Public Class frm_TableBuilder
                     End If
             End Select
             '
-            If Me.rdBtn_ES.Checked Then objFlds.updateSequenceNumbers_Tables_ES()
-            If Me.rdBtn_Report.Checked Then objFlds.updateSequenceNumbers_Tables()
-            If Me.rdBtn_App.Checked Then objFlds.updateSequenceNumbers_Tables_AP()
-            If Me.rdBtn_Letter.Checked Then objFlds.updateSequenceNumbers_Tables_LT()
+            If Me.rdBtn_ES.Checked Then objFlds.flds_update_SequenceNumbers_Tables_ES()
+            If Me.rdBtn_Report.Checked Then objFlds.flds_update_SequenceNumbers_Tables()
+            If Me.rdBtn_App.Checked Then objFlds.flds_update_SequenceNumbers_Tables_AP()
+            If Me.rdBtn_Letter.Checked Then objFlds.flds_update_SequenceNumbers_Tables_LT()
             '
-            objFlds.updateCrossReferenceFields()
+            objFlds.flds_update_CrossReferenceFields()
         Else
             MsgBox(strMsg)
         End If

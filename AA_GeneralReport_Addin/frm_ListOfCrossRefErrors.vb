@@ -40,7 +40,7 @@ Public Class frm_ListOfCrossRefErrors
         Me.lstBox_CrossRefErrors.Items.Clear()
         doFldUpdate = True
         '
-        Me.lstOfCrossRefs = objFlds.CrossReference_List(Me.myDoc, showErrorCrossRefsOnly, doFldUpdate)
+        Me.lstOfCrossRefs = objFlds.flds_CrossReference_List(Me.myDoc, showErrorCrossRefsOnly, doFldUpdate)
         '
         If Me.lstOfCrossRefs.Count > 0 Then
             For i = 0 To Me.lstOfCrossRefs.Count - 1

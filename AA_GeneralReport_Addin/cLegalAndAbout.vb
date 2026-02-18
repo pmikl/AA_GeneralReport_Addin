@@ -463,7 +463,7 @@ Public Class cLegalAndAbout
             'tmpl.Saved = True
             '
             'Now update references to the Comments fields in the document
-            objFlds.upDateCommentsField()
+            objFlds.flds_upDate_CommentsField()
             '
         Catch ex As Exception
             builtInProperties = objGlobals.glb_get_wrdActiveDoc.BuiltInDocumentProperties
