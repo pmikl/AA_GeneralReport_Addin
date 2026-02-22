@@ -126,10 +126,13 @@ Public Class cGlobals
         Me._glb_colour_WaterMark_Grey_stat = RGB(180, 180, 180)
 
         '
-        Me.var_glb_style_tblCaption_Line2_Indent = 65.4          'This is the indent of the second line of the caption style
+        Me.var_glb_style_tblCaption_Line2_Indent = 65.4                                 'This is the indent of the second line of the caption style
         '
-        'Me.var_glb_style_tblCaption_Line2_Indent = 80.4                'This is the indent of the second line of the caption style
-        Me.glb_var_TemplatesDir_default = "C:\Templates"
+        'Me.var_glb_style_tblCaption_Line2_Indent = 80.4                                'This is the indent of the second line of the caption style
+        'Me.glb_var_TemplatesDir_default = "C:\Templates"
+        'Me.glb_var_TemplatesDir_default = IO.Path.GetTempPath().TrimEnd("\"c, "/"c) + "aa_Documents"
+        Me.glb_var_TemplatesDir_default = IO.Path.GetTempPath() + "aa_Documents"        'IO.Path.GetTempPath() will return something like C:\Users\peter\AppData\Local\Temp\
+
         Me.glb_var_TemplatesDir_alt = Me.glb_getDir_documentsLocal()
         Me.glb_var_TemplateFileName = "AA GeneralReport.dotx"
         '

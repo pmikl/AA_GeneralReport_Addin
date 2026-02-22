@@ -29,18 +29,18 @@
     <DefineConstants>VSTO40</DefineConstants>
     <StartupObject>
     </StartupObject>
-    <IsWebBootstrapper>True</IsWebBootstrapper>
+    <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <PublishUrl>ftps://waws-prod-ml1-005.ftp.azurewebsites.windows.net/site/wwwroot/org_aa/office/word/GeneralReport_Addin/install/</PublishUrl>
-    <InstallUrl>https://mikl.net.au/org_aa/office/word/GeneralReport_Addin/install_gen4_2026PKI/</InstallUrl>
+    <PublishUrl>S:\01 wraith install files\org_aa\office\word\GeneralReport_Addin\install\</PublishUrl>
+    <InstallUrl>\\wraith\Software\01 wraith install files\org_aa\office\word\GeneralReport_Addin\install\</InstallUrl>
     <TargetCulture>en</TargetCulture>
-    <ApplicationVersion>4.0.0.515</ApplicationVersion>
+    <ApplicationVersion>4.0.0.524</ApplicationVersion>
     <AutoIncrementApplicationRevision>true</AutoIncrementApplicationRevision>
     <UpdateEnabled>true</UpdateEnabled>
     <UpdateInterval>0</UpdateInterval>
     <UpdateIntervalUnits>days</UpdateIntervalUnits>
     <ProductName>AA_GeneralReport_Addin</ProductName>
-    <PublisherName />
+    <PublisherName>Peter Mikelaitis</PublisherName>
     <SupportUrl />
     <FriendlyName>AA_GeneralReport_Addin</FriendlyName>
     <OfficeApplicationDescription />

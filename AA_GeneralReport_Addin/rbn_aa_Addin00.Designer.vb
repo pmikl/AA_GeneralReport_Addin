@@ -6361,6 +6361,7 @@
         Me.btn_buildReport_Prt_SW.ScreenTip = "New Portrait Report"
         Me.btn_buildReport_Prt_SW.ShowImage = True
         Me.btn_buildReport_Prt_SW.SuperTip = "This is a software build. Takes longer, but less depenedent on templates"
+        Me.btn_buildReport_Prt_SW.Visible = False
         '
         'Separator92
         '
@@ -6382,6 +6383,7 @@
         Me.btn_buildReport_Lnd_SW.OfficeImageId = "SizeToGridAccess"
         Me.btn_buildReport_Lnd_SW.ShowImage = True
         Me.btn_buildReport_Lnd_SW.SuperTip = "This is a software build. Takes longer, but less dependent on templates"
+        Me.btn_buildReport_Lnd_SW.Visible = False
         '
         'Separator93
         '
@@ -6403,6 +6405,7 @@
         Me.btn_buildReport_Brf_SW.OfficeImageId = "SizeToGridAccess"
         Me.btn_buildReport_Brf_SW.ShowImage = True
         Me.btn_buildReport_Brf_SW.SuperTip = "This is a software build. Takes longer, but less dependent on templates"
+        Me.btn_buildReport_Brf_SW.Visible = False
         '
         'Separator90
         '

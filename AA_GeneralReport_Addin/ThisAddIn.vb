@@ -1,4 +1,5 @@
-﻿Public Class ThisAddIn
+﻿Imports Word = Microsoft.Office.Interop.Word
+Public Class ThisAddIn
     Private WithEvents myTimer As New System.Windows.Forms.Timer()
     Private WithEvents wordApp As Word.Application
     Private hasHandledFirstDoc As Boolean = False
@@ -38,6 +39,13 @@
         'The actual directory used for this session is stored in Me.strActualDirTemplates
         '
         '***Verified 20250909
+        '
+        Dim targetPath As String = "C:\Templates\AA GeneralReport.dotx"
+        '
+        If System.IO.File.Exists(targetPath) Then
+            System.IO.File.Delete(targetPath)
+            '
+        End If
         '
         Me.strActualDirTemplates = objGlobals.glb_setDir_Templates()
         objFileMgr.file_set_templateFromResources(Me.strActualDirTemplates)

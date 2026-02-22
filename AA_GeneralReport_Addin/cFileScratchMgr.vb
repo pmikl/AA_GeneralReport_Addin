@@ -10,6 +10,22 @@ Public Class cFileScratchMgr
 
     End Sub
     '
+    Public Sub scratch_Dir_Test()
+        '
+        'IO.Path.GetTempPath() will return something like C:\Users\peter\AppData\Local\Temp\
+        '
+        Dim tempPath As String = IO.Path.Combine(IO.Path.GetTempPath(), Guid.NewGuid().ToString() & ".docx")
+        'IO.File.WriteAllBytes(tempPath, My.Resources.shp_aa_Template)
+        '
+        'tempDocxPath = objFilesMgr.file_Extract_DocxFromResource(templateBytes)
+        '
+        ' 2. Open the template document invisibly
+        'tempDoc = objGlobals.glb_get_wrdApp.Documents.Open(tempPath,
+        'ReadOnly:=True,
+        'Visible:=False)
+
+    End Sub
+    '
     ''' <summary>
     ''' This function returns the full path name of the scratch directory used for temporary
     ''' file downloads.. It is a subdirectory of the 'Templates' direcory
@@ -18,7 +34,8 @@ Public Class cFileScratchMgr
     Public Function scratch_get_scratchDirectory() As String
         Dim strActualDirTemplates As String
         '
-        strActualDirTemplates = objGlobals.glb_getDir_inUseforTemplates() + "\" + Me._strScratchDir
+        'strActualDirTemplates = objGlobals.glb_getDir_inUseforTemplates() + "\" + Me._strScratchDir
+        strActualDirTemplates = IO.Path.GetTempPath() + Me._strScratchDir
         '
         Return strActualDirTemplates
     End Function
