@@ -41,115 +41,78 @@
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim RibbonDialogLauncherImpl1 As Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher = Me.Factory.CreateRibbonDialogLauncher
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(rbn_aa_Addin00))
         Dim RibbonDropDownItemImpl1 As Microsoft.Office.Tools.Ribbon.RibbonDropDownItem = Me.Factory.CreateRibbonDropDownItem
         Dim RibbonDropDownItemImpl2 As Microsoft.Office.Tools.Ribbon.RibbonDropDownItem = Me.Factory.CreateRibbonDropDownItem
         Dim RibbonDropDownItemImpl3 As Microsoft.Office.Tools.Ribbon.RibbonDropDownItem = Me.Factory.CreateRibbonDropDownItem
+        Dim RibbonDialogLauncherImpl1 As Microsoft.Office.Tools.Ribbon.RibbonDialogLauncher = Me.Factory.CreateRibbonDialogLauncher
         Me.tab_aa_Styles = Me.Factory.CreateRibbonTab
         Me.grp_Styles_AAThemes = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_CoverPage = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_Report = Me.Factory.CreateRibbonGroup
-        Me.Separator5 = Me.Factory.CreateRibbonSeparator
-        Me.grpStyles_NoNum = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_Appendices = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_Text = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_Lists = Me.Factory.CreateRibbonGroup
-        Me.Separator55 = Me.Factory.CreateRibbonSeparator
-        Me.grpStyles_Emphasis = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_resetStyles = Me.Factory.CreateRibbonGroup
-        Me.grpStyles_resetCaptions = Me.Factory.CreateRibbonGroup
-        Me.tab_aa_Placeholders = Me.Factory.CreateRibbonTab
-        Me.grp_PlaceHolders = Me.Factory.CreateRibbonGroup
-        Me.Separator37 = Me.Factory.CreateRibbonSeparator
-        Me.Separator38 = Me.Factory.CreateRibbonSeparator
-        Me.grp_special_AATableFormatting = Me.Factory.CreateRibbonGroup
-        Me.Separator69 = Me.Factory.CreateRibbonSeparator
-        Me.Separator70 = Me.Factory.CreateRibbonSeparator
-        Me.Separator71 = Me.Factory.CreateRibbonSeparator
-        Me.grp_floatingPlaceholders = Me.Factory.CreateRibbonGroup
-        Me.grp_Plh_miscPlaceholders = Me.Factory.CreateRibbonGroup
-        Me.tab_aa_PagesAndSections = Me.Factory.CreateRibbonTab
-        Me.grpRpt_CoversAndTOC = Me.Factory.CreateRibbonGroup
-        Me.grpRpt_ImagePanels = Me.Factory.CreateRibbonGroup
-        Me.grpRpt_Report = Me.Factory.CreateRibbonGroup
-        Me.Separator2 = Me.Factory.CreateRibbonSeparator
-        Me.grpRpt_Appendix = Me.Factory.CreateRibbonGroup
-        Me.grpRpt_sectOptions = Me.Factory.CreateRibbonGroup
-        Me.grpRpt_CoveringLetter = Me.Factory.CreateRibbonGroup
-        Me.grp_WhatsNew = Me.Factory.CreateRibbonGroup
-        Me.grp_Fixes = Me.Factory.CreateRibbonGroup
-        Me.tab_aa_Finalise = Me.Factory.CreateRibbonTab
-        Me.grp_WaterMarks = Me.Factory.CreateRibbonGroup
-        Me.grp_PgNumMgmnt = Me.Factory.CreateRibbonGroup
-        Me.grp_Finalise = Me.Factory.CreateRibbonGroup
-        Me.grpWCAG = Me.Factory.CreateRibbonGroup
-        Me.grpRbn_Mgmnt = Me.Factory.CreateRibbonGroup
-        Me.grpTst_LoadFromWeb = Me.Factory.CreateRibbonGroup
-        Me.grpMetaData = Me.Factory.CreateRibbonGroup
-        Me.grpTestTools = Me.Factory.CreateRibbonGroup
-        Me.tab_aa_Home = Me.Factory.CreateRibbonTab
-        Me.grp_AA_ThemeandHome = Me.Factory.CreateRibbonGroup
-        Me.grp_buildDocuments = Me.Factory.CreateRibbonGroup
-        Me.Separator90 = Me.Factory.CreateRibbonSeparator
-        Me.Separator91 = Me.Factory.CreateRibbonSeparator
-        Me.Separator95 = Me.Factory.CreateRibbonSeparator
-        Me.Separator94 = Me.Factory.CreateRibbonSeparator
-        Me.grpTest = Me.Factory.CreateRibbonGroup
-        Me.grp_SwBuild = Me.Factory.CreateRibbonGroup
-        Me.Group2 = Me.Factory.CreateRibbonGroup
         Me.mnu_SetTheme = Me.Factory.CreateRibbonMenu
         Me.xbtn__mnuThemes_set_AATheme = Me.Factory.CreateRibbonButton
         Me.xbtn__mnuThemes_set_AAThemeAndStyles = Me.Factory.CreateRibbonButton
         Me.Separator1 = Me.Factory.CreateRibbonSeparator
         Me.xbtn_mnuThemes_ActivateTabPGS = Me.Factory.CreateRibbonButton
         Me.xbtn_mnuThemes_PGSToggle = Me.Factory.CreateRibbonButton
+        Me.grpStyles_CoverPage = Me.Factory.CreateRibbonGroup
         Me.grpStylesES_StyleSet = Me.Factory.CreateRibbonButton
         Me.grpStylesES_Heading2_ES = Me.Factory.CreateRibbonButton
         Me.grpStylesES_Heading3_ES = Me.Factory.CreateRibbonButton
         Me.grpStylesES_Heading4_ES = Me.Factory.CreateRibbonButton
         Me.grpStylesES_Heading5_ES = Me.Factory.CreateRibbonButton
+        Me.grpStyles_Report = Me.Factory.CreateRibbonGroup
         Me.grpStylesRpt_StyleSet = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading2_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading3_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading4_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading5_Rpt = Me.Factory.CreateRibbonButton
+        Me.Separator5 = Me.Factory.CreateRibbonSeparator
         Me.grpStyles_mnu_Heading3Numbering = Me.Factory.CreateRibbonMenu
         Me.grpStyles_mnu_Heading3Numbering_btn_on = Me.Factory.CreateRibbonButton
         Me.grpStyles_mnu_Heading3Numbering_btn_off = Me.Factory.CreateRibbonButton
+        Me.grpStyles_NoNum = Me.Factory.CreateRibbonGroup
         Me.grpStylesRpt_HeadingNoNum_StyleSet = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading2NoNum_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading3NoNum_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading4NoNum_Rpt = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Heading5NoNum_Rpt = Me.Factory.CreateRibbonButton
+        Me.grpStyles_Appendices = Me.Factory.CreateRibbonGroup
         Me.grpStylesApp_StyleSet = Me.Factory.CreateRibbonButton
         Me.grpStylesApp_Heading1_App = Me.Factory.CreateRibbonButton
         Me.grpStylesApp_Heading2_App = Me.Factory.CreateRibbonButton
         Me.grpStylesApp_Heading3_App = Me.Factory.CreateRibbonButton
         Me.grpStylesApp_Heading4_App = Me.Factory.CreateRibbonButton
         Me.grpStylesApp_Heading5_App = Me.Factory.CreateRibbonButton
+        Me.grpStyles_Text = Me.Factory.CreateRibbonGroup
         Me.grpStylesText_BodyText = Me.Factory.CreateRibbonButton
         Me.grpStylesRpt_Intro = Me.Factory.CreateRibbonButton
         Me.grpStylesOther_Quote = Me.Factory.CreateRibbonButton
         Me.grpStylesOther_QuoteBlt = Me.Factory.CreateRibbonButton
         Me.grpStylesOther_QuoteSource = Me.Factory.CreateRibbonButton
+        Me.grpStyles_Lists = Me.Factory.CreateRibbonGroup
         Me.grpStylesLists_List1 = Me.Factory.CreateRibbonButton
         Me.grpStylesLists_List2 = Me.Factory.CreateRibbonButton
         Me.grpStylesLists_List3 = Me.Factory.CreateRibbonButton
+        Me.Separator55 = Me.Factory.CreateRibbonSeparator
         Me.grpStylesLists_ListNumber1 = Me.Factory.CreateRibbonButton
         Me.grpStylesLists_ListNumber2 = Me.Factory.CreateRibbonButton
         Me.grpStylesLists_ListNumber3 = Me.Factory.CreateRibbonButton
+        Me.grpStyles_Emphasis = Me.Factory.CreateRibbonGroup
         Me.tbStyles_mnu_Emphasis = Me.Factory.CreateRibbonMenu
         Me.grpPullouts_emphasisBox_TextStyle_Left_2 = Me.Factory.CreateRibbonButton
         Me.grpPullouts_emphasisBox_TextStyle_Centre_2 = Me.Factory.CreateRibbonButton
         Me.grpPullouts_emphasisBox_TextStyle_Right_2 = Me.Factory.CreateRibbonButton
+        Me.grpStyles_resetStyles = Me.Factory.CreateRibbonGroup
         Me.grpStylesTools_to_PrintDefault = Me.Factory.CreateRibbonButton
         Me.grpStylesTools_to_DisplayDefault = Me.Factory.CreateRibbonButton
         Me.tbStyles_grpResetStyles_mnu_ResetStyles = Me.Factory.CreateRibbonMenu
         Me.tabStyles_btn_resetStylesForRptPrt = Me.Factory.CreateRibbonButton
         Me.tabStyles_btn_resetStylesForRptLnd = Me.Factory.CreateRibbonButton
         Me.tabStyles_btn_resetStylesForRptBrf = Me.Factory.CreateRibbonButton
+        Me.grpStyles_resetCaptions = Me.Factory.CreateRibbonGroup
         Me.grpStylesTools_resetCaptions = Me.Factory.CreateRibbonButton
+        Me.tab_aa_Placeholders = Me.Factory.CreateRibbonTab
+        Me.grp_PlaceHolders = Me.Factory.CreateRibbonGroup
         Me.mnuCloseDocuments161 = Me.Factory.CreateRibbonMenu
         Me.grpBoxes_Box = Me.Factory.CreateRibbonButton
         Me.grpBoxes_AppendixBox = Me.Factory.CreateRibbonButton
@@ -201,6 +164,7 @@
         Me.grpReport_mnu_CaseStudies_HalfPage = Me.Factory.CreateRibbonButton
         Me.Separator39 = Me.Factory.CreateRibbonSeparator
         Me.grpReport_mnu_CaseStudies_CaseStudyHeading = Me.Factory.CreateRibbonButton
+        Me.Separator37 = Me.Factory.CreateRibbonSeparator
         Me.mnuCloseDocuments16 = Me.Factory.CreateRibbonMenu
         Me.grpFigures_Figure = Me.Factory.CreateRibbonButton
         Me.Separator44 = Me.Factory.CreateRibbonSeparator
@@ -225,6 +189,7 @@
         Me.grpTbls_fillCellsWithCustomColour = Me.Factory.CreateRibbonButton
         Me.Separator46 = Me.Factory.CreateRibbonSeparator
         Me.grpTbls_setTableTextCustomColour = Me.Factory.CreateRibbonButton
+        Me.Separator38 = Me.Factory.CreateRibbonSeparator
         Me.grpPlh_btn_buildCustomTable = Me.Factory.CreateRibbonButton
         Me.grpTbl_Styles = Me.Factory.CreateRibbonMenu
         Me.grpTbls_TableColumnHeadingsStyle = Me.Factory.CreateRibbonButton
@@ -309,11 +274,13 @@
         Me.grpPlh_mnu_DeleteTable = Me.Factory.CreateRibbonMenu
         Me.grpTblsPlh_DeleteTable_fast = Me.Factory.CreateRibbonButton
         Me.grpTblsPlh_DeleteTable = Me.Factory.CreateRibbonButton
+        Me.grp_special_AATableFormatting = Me.Factory.CreateRibbonGroup
         Me.tbPlh_mnu_convertPlhToHalfPage = Me.Factory.CreateRibbonMenu
         Me.grpTbl_mnu_AAPlh_To_HalfPlh_Left = Me.Factory.CreateRibbonButton
         Me.grpTbl_mnu_AAPlh_To_HalfPlh_Right = Me.Factory.CreateRibbonButton
         Me.Separator67 = Me.Factory.CreateRibbonSeparator
         Me.grpTbl_mnu_AAPlh_Reset_to_FullColumn = Me.Factory.CreateRibbonButton
+        Me.Separator69 = Me.Factory.CreateRibbonSeparator
         Me.tbPlh_mnu_rapidFormat = Me.Factory.CreateRibbonMenu
         Me.grpTblsPlh_rapidFormat = Me.Factory.CreateRibbonButton
         Me.grpTblsPlh_rapidFormat_Encapsulated = Me.Factory.CreateRibbonButton
@@ -328,6 +295,7 @@
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_ES = Me.Factory.CreateRibbonButton
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_Body = Me.Factory.CreateRibbonButton
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP = Me.Factory.CreateRibbonButton
+        Me.Separator70 = Me.Factory.CreateRibbonSeparator
         Me.grpAATbls_mnu_editColumns = Me.Factory.CreateRibbonMenu
         Me.grpTblsEdit_InsertColumnRight = Me.Factory.CreateRibbonButton
         Me.grpTblsEdit_InsertColumnLeft = Me.Factory.CreateRibbonButton
@@ -344,11 +312,13 @@
         Me.grpTblsEdit_PastePriorTable = Me.Factory.CreateRibbonButton
         Me.Separator75 = Me.Factory.CreateRibbonSeparator
         Me.grpTblsEdit_UndoTableAction = Me.Factory.CreateRibbonButton
+        Me.Separator71 = Me.Factory.CreateRibbonSeparator
         Me.grp_Plh_TableColumns_mnu_more = Me.Factory.CreateRibbonMenu
         Me.grpTblsEdit_Convert_EncapsToStd = Me.Factory.CreateRibbonButton
         Me.grpTblsEdit_Convert_StdToEncaps = Me.Factory.CreateRibbonButton
         Me.Separator76 = Me.Factory.CreateRibbonSeparator
         Me.grpTblsEdit_Split_Table = Me.Factory.CreateRibbonButton
+        Me.grp_floatingPlaceholders = Me.Factory.CreateRibbonGroup
         Me.grpReport_PlH_Handling = Me.Factory.CreateRibbonMenu
         Me.grpReport_PlH_LockToTop = Me.Factory.CreateRibbonButton
         Me.grpReport_PlHFloat_lock_toMarginsLeftAndTop = Me.Factory.CreateRibbonButton
@@ -362,8 +332,11 @@
         Me.grpReport_PlH_TwoColumnWidth = Me.Factory.CreateRibbonButton
         Me.grpReport_PlH_convertToInline_findAllFloatingTables_2 = Me.Factory.CreateRibbonButton
         Me.grpReport_PlH_convertToInline = Me.Factory.CreateRibbonButton
+        Me.grp_Plh_miscPlaceholders = Me.Factory.CreateRibbonGroup
         Me.grpPicts_PasteAsPic = Me.Factory.CreateRibbonButton
         Me.grpEquations_Numbered = Me.Factory.CreateRibbonButton
+        Me.tab_aa_PagesAndSections = Me.Factory.CreateRibbonTab
+        Me.grpRpt_CoversAndTOC = Me.Factory.CreateRibbonGroup
         Me.gal_CoverPages = Me.Factory.CreateRibbonGallery
         Me.gal_CoverPages_btn_deleteCoverPage = Me.Factory.CreateRibbonButton
         Me.grpCntsPages = Me.Factory.CreateRibbonMenu
@@ -386,6 +359,7 @@
         Me.grpToc_TOC_insertLevels_1_to_3 = Me.Factory.CreateRibbonButton
         Me.Separator21 = Me.Factory.CreateRibbonSeparator
         Me.grpToc_TOC_update = Me.Factory.CreateRibbonButton
+        Me.grpRpt_ImagePanels = Me.Factory.CreateRibbonGroup
         Me.grpCoversToc_mnu_Images = Me.Factory.CreateRibbonMenu
         Me.grpCpImages_ImageFromFile = Me.Factory.CreateRibbonButton
         Me.grpCpImages_ImageFromClip = Me.Factory.CreateRibbonButton
@@ -414,11 +388,13 @@
         Me.submnu_SetTransparency_to_75 = Me.Factory.CreateRibbonButton
         Me.submnu_SetTransparency_to_100 = Me.Factory.CreateRibbonButton
         Me.mnu_SetBackPanel_to_BannerHeight = Me.Factory.CreateRibbonButton
+        Me.grpRpt_Report = Me.Factory.CreateRibbonGroup
         Me.grpRpt_btn_GlossaryAndAbbreviations_bblk = Me.Factory.CreateRibbonButton
         Me.grpReport_btn_newDivider_Chpt_bblk = Me.Factory.CreateRibbonButton
         Me.grpRpt_mnu_CreateExecSummary = Me.Factory.CreateRibbonMenu
         Me.grpExecSum_ExecSum_bblk = Me.Factory.CreateRibbonButton
         Me.grpExecSum_ExecSum_Grey_bblk = Me.Factory.CreateRibbonButton
+        Me.Separator2 = Me.Factory.CreateRibbonSeparator
         Me.grpRpt_mnu_CreateRpt = Me.Factory.CreateRibbonMenu
         Me.grpReport_btn_buildPortraitReport = Me.Factory.CreateRibbonButton
         Me.Separator3 = Me.Factory.CreateRibbonSeparator
@@ -459,12 +435,14 @@
         Me.Separator8 = Me.Factory.CreateRibbonSeparator
         Me.grpReport_mnu_CaseStudies_RecolourFooter_toWhite = Me.Factory.CreateRibbonButton
         Me.grpReport_mnu_CaseStudies_RecolourFooter_Reset = Me.Factory.CreateRibbonButton
+        Me.grpRpt_Appendix = Me.Factory.CreateRibbonGroup
         Me.grpAppendix_mnu01 = Me.Factory.CreateRibbonMenu
         Me.grpAppendix_newAppPart = Me.Factory.CreateRibbonButton
         Me.grpAppendix_newAttPart = Me.Factory.CreateRibbonButton
         Me.grpReport_mnu_NewAppAtt = Me.Factory.CreateRibbonMenu
         Me.grpAppendix_newAppChapter_inFront_bblk = Me.Factory.CreateRibbonButton
         Me.grpAppendix_newAppChapter_behind_bblk = Me.Factory.CreateRibbonButton
+        Me.grpRpt_sectOptions = Me.Factory.CreateRibbonGroup
         Me.mnuCloseDocuments000 = Me.Factory.CreateRibbonMenu
         Me.grpSectOptions_submnu_LndWidthOptions = Me.Factory.CreateRibbonMenu
         Me.grpSectOptions_sect_InsertSectionBounded_Lnd = Me.Factory.CreateRibbonButton
@@ -510,6 +488,7 @@
         Me.grpReport_Columns_02_RightWide = Me.Factory.CreateRibbonButton
         Me.Separator19 = Me.Factory.CreateRibbonSeparator
         Me.grpReport_Columns_01 = Me.Factory.CreateRibbonButton
+        Me.grpRpt_CoveringLetter = Me.Factory.CreateRibbonGroup
         Me.grpLetter_insertLetter = Me.Factory.CreateRibbonButton
         Me.grpLetter_insertMemo = Me.Factory.CreateRibbonButton
         Me.grpCoveringLetter_mnu6 = Me.Factory.CreateRibbonMenu
@@ -527,7 +506,9 @@
         Me.grpLetter_LtrHead2 = Me.Factory.CreateRibbonButton
         Me.grpLetter_LtrHead3 = Me.Factory.CreateRibbonButton
         Me.grpLetter_delReport = Me.Factory.CreateRibbonButton
+        Me.grp_WhatsNew = Me.Factory.CreateRibbonGroup
         Me.grpWhatsNew_Form = Me.Factory.CreateRibbonButton
+        Me.grp_Fixes = Me.Factory.CreateRibbonGroup
         Me.grpFixes_Repairs = Me.Factory.CreateRibbonMenu
         Me.grpFixes_Repairs_remCharChar = Me.Factory.CreateRibbonButton
         Me.grpFixes_Repairs_remSpaces_indrCells = Me.Factory.CreateRibbonButton
@@ -539,6 +520,8 @@
         Me.mnu_Fixes_ScreenUpdating = Me.Factory.CreateRibbonMenu
         Me.grpFixes_ScreenUpdatingOff = Me.Factory.CreateRibbonButton
         Me.grpFixes_ScreenUpdatingOn = Me.Factory.CreateRibbonButton
+        Me.tab_aa_Finalise = Me.Factory.CreateRibbonTab
+        Me.grp_WaterMarks = Me.Factory.CreateRibbonGroup
         Me.grp_waterMark_mnu03 = Me.Factory.CreateRibbonMenu
         Me.grp_waterMark_cabinet_add = Me.Factory.CreateRibbonButton
         Me.grp_waterMark_commercial_add = Me.Factory.CreateRibbonButton
@@ -576,6 +559,7 @@
         Me.grp_waterMark_colour_grey_stat = Me.Factory.CreateRibbonButton
         Me.Separator80 = Me.Factory.CreateRibbonSeparator
         Me.grp_waterMark_forceStat_StyleToDefault = Me.Factory.CreateRibbonButton
+        Me.grp_PgNumMgmnt = Me.Factory.CreateRibbonGroup
         Me.tabFin_mnu_PageNumFormatting = Me.Factory.CreateRibbonMenu
         Me.grpFixes_ApplyEsNumbering = Me.Factory.CreateRibbonButton
         Me.grpFixes_ApplyStdNumbering = Me.Factory.CreateRibbonButton
@@ -588,6 +572,7 @@
         Me.tabFin_mnu_PgNumMgmnt_ReNum = Me.Factory.CreateRibbonMenu
         Me.grp_PgNumMgmnt_ReNum_std = Me.Factory.CreateRibbonButton
         Me.grp_PgNumMgmnt_ReNum_2Part = Me.Factory.CreateRibbonButton
+        Me.grp_Finalise = Me.Factory.CreateRibbonGroup
         Me.grp_Finalise_mnu01 = Me.Factory.CreateRibbonMenu
         Me.grp_Finalise_CrossRefError = Me.Factory.CreateRibbonButton
         Me.Separator88 = Me.Factory.CreateRibbonSeparator
@@ -602,6 +587,7 @@
         Me.grp_Finalise_CrossRefFlds_setRefFldNotBold = Me.Factory.CreateRibbonButton
         Me.grpFixes_Repairs_delSpace1_betweenWords = Me.Factory.CreateRibbonButton
         Me.grpFixes_Repairs_delSpace1_atSentenceEnd = Me.Factory.CreateRibbonButton
+        Me.grpWCAG = Me.Factory.CreateRibbonGroup
         Me.tabFin_mnu_AccessibilityTools = Me.Factory.CreateRibbonMenu
         Me.grpWCAG_notesOnAccessibility = Me.Factory.CreateRibbonButton
         Me.grpWCAG_convertThisDoc = Me.Factory.CreateRibbonButton
@@ -616,9 +602,11 @@
         Me.grpWCAG_tool_convertAllStyles_toBlack = Me.Factory.CreateRibbonButton
         Me.grpWCAG_tool_tableHeaderColour_all = Me.Factory.CreateRibbonButton
         Me.grpReport_PlH_convertToInline_findAllFloatingTables = Me.Factory.CreateRibbonButton
+        Me.grpRbn_Mgmnt = Me.Factory.CreateRibbonGroup
         Me.grpRbn_Mgmnt_mnu_00 = Me.Factory.CreateRibbonMenu
         Me.grpRbn_Mgmnt_removeRbn = Me.Factory.CreateRibbonButton
         Me.Separator54 = Me.Factory.CreateRibbonSeparator
+        Me.grpTst_LoadFromWeb = Me.Factory.CreateRibbonGroup
         Me.grpRbn_Downloads_mnu_00 = Me.Factory.CreateRibbonMenu
         Me.grpTst_LoadFromResources_getStylesGuide = Me.Factory.CreateRibbonButton
         Me.grpTst_LoadFromResources_getStylesGuide_Accessible = Me.Factory.CreateRibbonButton
@@ -632,8 +620,12 @@
         Me.grpTst_LoadFromResources_getRptLndExample = Me.Factory.CreateRibbonButton
         Me.grpTst_LoadFromResources_getRptBrfExample = Me.Factory.CreateRibbonButton
         Me.grpTst_LoadFromWeb_getTemplate = Me.Factory.CreateRibbonButton
+        Me.grpMetaData = Me.Factory.CreateRibbonGroup
         Me.grpMetaData_Remove_FromDoc = Me.Factory.CreateRibbonButton
+        Me.grpTestTools = Me.Factory.CreateRibbonGroup
         Me.grpTest_pgNum_getTagStyleMap = Me.Factory.CreateRibbonButton
+        Me.tab_aa_Home = Me.Factory.CreateRibbonTab
+        Me.grp_AA_ThemeandHome = Me.Factory.CreateRibbonGroup
         Me.Menu1 = Me.Factory.CreateRibbonMenu
         Me.tabThms_mnu_Set_btn_applyAATheme = Me.Factory.CreateRibbonButton
         Me.tabThms_mnu_Set_btn__applyAAThemeStylesTemplate = Me.Factory.CreateRibbonButton
@@ -649,6 +641,7 @@
         Me.tabThms_btn_resetStylesForRptLnd = Me.Factory.CreateRibbonButton
         Me.tabThms_btn_resetStylesForRptBrf = Me.Factory.CreateRibbonButton
         Me.btn_colorPicker = Me.Factory.CreateRibbonButton
+        Me.grp_buildDocuments = Me.Factory.CreateRibbonGroup
         Me.tbHome_mnu_CreateReport = Me.Factory.CreateRibbonMenu
         Me.grpReport_tbHome_btn_buildPortraitReport = Me.Factory.CreateRibbonButton
         Me.btn_buildReport_Prt_SW = Me.Factory.CreateRibbonButton
@@ -658,6 +651,7 @@
         Me.Separator93 = Me.Factory.CreateRibbonSeparator
         Me.grpReport_tbHome_btn_buildAABrief = Me.Factory.CreateRibbonButton
         Me.btn_buildReport_Brf_SW = Me.Factory.CreateRibbonButton
+        Me.Separator90 = Me.Factory.CreateRibbonSeparator
         Me.tbHome_grpLetter_standaloneLetter = Me.Factory.CreateRibbonButton
         Me.tbHome_grpLetter_standaloneMemo = Me.Factory.CreateRibbonButton
         Me.tbHome_mnu_contactDetails = Me.Factory.CreateRibbonMenu
@@ -669,13 +663,18 @@
         Me.tbHome_mnu_contactDetails_letter_Perth = Me.Factory.CreateRibbonButton
         Me.tbHome_mnu_contactDetails_letter_Adelaide = Me.Factory.CreateRibbonButton
         Me.tbHome_mnu_contactDetails_memo = Me.Factory.CreateRibbonButton
+        Me.Separator91 = Me.Factory.CreateRibbonSeparator
         Me.btn_update_Fields = Me.Factory.CreateRibbonButton
+        Me.Separator95 = Me.Factory.CreateRibbonSeparator
         Me.tbHome_btn_ToggleView = Me.Factory.CreateRibbonButton
+        Me.Separator94 = Me.Factory.CreateRibbonSeparator
         Me.tbHome_btn_Help = Me.Factory.CreateRibbonButton
+        Me.grpTest = Me.Factory.CreateRibbonGroup
         Me.grpTest_btn_cloneDoc = Me.Factory.CreateRibbonButton
         Me.grpTest_btn_getTimeStamp = Me.Factory.CreateRibbonButton
         Me.grpSectOptions_sect_InsertSection_InFront = Me.Factory.CreateRibbonButton
         Me.grpSectOptions_sect_InsertSection_Behind = Me.Factory.CreateRibbonButton
+        Me.grp_SwBuild = Me.Factory.CreateRibbonGroup
         Me.grpRpt_btn_GlossaryAndAbbreviations = Me.Factory.CreateRibbonButton
         Me.grpReport_btn_newDivider_Chpt = Me.Factory.CreateRibbonButton
         Me.Menu5 = Me.Factory.CreateRibbonMenu
@@ -700,6 +699,7 @@
         Me.grpLetters_mnu_swBuilds = Me.Factory.CreateRibbonMenu
         Me.grpLetter_insertLetter_swBuild = Me.Factory.CreateRibbonButton
         Me.grpLetter_insertMemo_swBuild = Me.Factory.CreateRibbonButton
+        Me.Group2 = Me.Factory.CreateRibbonGroup
         Me.btn_ApplyStdTheme_Manually = Me.Factory.CreateRibbonButton
         Me.mnu_makeStyles = Me.Factory.CreateRibbonMenu
         Me.btn_styles_makeTableText = Me.Factory.CreateRibbonButton
@@ -769,430 +769,6 @@
         Me.grp_Styles_AAThemes.Name = "grp_Styles_AAThemes"
         Me.grp_Styles_AAThemes.Visible = False
         '
-        'grpStyles_CoverPage
-        '
-        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_StyleSet)
-        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading2_ES)
-        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading3_ES)
-        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading4_ES)
-        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading5_ES)
-        Me.grpStyles_CoverPage.Label = "Exec Sum"
-        Me.grpStyles_CoverPage.Name = "grpStyles_CoverPage"
-        '
-        'grpStyles_Report
-        '
-        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_StyleSet)
-        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading2_Rpt)
-        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading3_Rpt)
-        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading4_Rpt)
-        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading5_Rpt)
-        Me.grpStyles_Report.Items.Add(Me.Separator5)
-        Me.grpStyles_Report.Items.Add(Me.grpStyles_mnu_Heading3Numbering)
-        Me.grpStyles_Report.Label = "Report"
-        Me.grpStyles_Report.Name = "grpStyles_Report"
-        '
-        'Separator5
-        '
-        Me.Separator5.Name = "Separator5"
-        '
-        'grpStyles_NoNum
-        '
-        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_HeadingNoNum_StyleSet)
-        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading2NoNum_Rpt)
-        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading3NoNum_Rpt)
-        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading4NoNum_Rpt)
-        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading5NoNum_Rpt)
-        Me.grpStyles_NoNum.Label = "Use Anywhere"
-        Me.grpStyles_NoNum.Name = "grpStyles_NoNum"
-        '
-        'grpStyles_Appendices
-        '
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_StyleSet)
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading1_App)
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading2_App)
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading3_App)
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading4_App)
-        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading5_App)
-        Me.grpStyles_Appendices.Label = "Appendix / Attachment"
-        Me.grpStyles_Appendices.Name = "grpStyles_Appendices"
-        '
-        'grpStyles_Text
-        '
-        Me.grpStyles_Text.Items.Add(Me.grpStylesText_BodyText)
-        Me.grpStyles_Text.Items.Add(Me.grpStylesRpt_Intro)
-        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_Quote)
-        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_QuoteBlt)
-        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_QuoteSource)
-        Me.grpStyles_Text.Label = "Text"
-        Me.grpStyles_Text.Name = "grpStyles_Text"
-        '
-        'grpStyles_Lists
-        '
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List1)
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List2)
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List3)
-        Me.grpStyles_Lists.Items.Add(Me.Separator55)
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber1)
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber2)
-        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber3)
-        Me.grpStyles_Lists.Label = "Lists"
-        Me.grpStyles_Lists.Name = "grpStyles_Lists"
-        '
-        'Separator55
-        '
-        Me.Separator55.Name = "Separator55"
-        '
-        'grpStyles_Emphasis
-        '
-        Me.grpStyles_Emphasis.Items.Add(Me.tbStyles_mnu_Emphasis)
-        Me.grpStyles_Emphasis.Label = "Emphasis"
-        Me.grpStyles_Emphasis.Name = "grpStyles_Emphasis"
-        '
-        'grpStyles_resetStyles
-        '
-        Me.grpStyles_resetStyles.Items.Add(Me.grpStylesTools_to_PrintDefault)
-        Me.grpStyles_resetStyles.Items.Add(Me.grpStylesTools_to_DisplayDefault)
-        Me.grpStyles_resetStyles.Items.Add(Me.tbStyles_grpResetStyles_mnu_ResetStyles)
-        Me.grpStyles_resetStyles.Label = "Reset Styles"
-        Me.grpStyles_resetStyles.Name = "grpStyles_resetStyles"
-        '
-        'grpStyles_resetCaptions
-        '
-        Me.grpStyles_resetCaptions.Items.Add(Me.grpStylesTools_resetCaptions)
-        Me.grpStyles_resetCaptions.Label = "Reset Captions"
-        Me.grpStyles_resetCaptions.Name = "grpStyles_resetCaptions"
-        '
-        'tab_aa_Placeholders
-        '
-        Me.tab_aa_Placeholders.Groups.Add(Me.grp_PlaceHolders)
-        Me.tab_aa_Placeholders.Groups.Add(Me.grp_special_AATableFormatting)
-        Me.tab_aa_Placeholders.Groups.Add(Me.grp_floatingPlaceholders)
-        Me.tab_aa_Placeholders.Groups.Add(Me.grp_Plh_miscPlaceholders)
-        Me.tab_aa_Placeholders.KeyTip = "JL"
-        Me.tab_aa_Placeholders.Label = "Placeholders"
-        Me.tab_aa_Placeholders.Name = "tab_aa_Placeholders"
-        Me.tab_aa_Placeholders.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
-        '
-        'grp_PlaceHolders
-        '
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments161)
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments2233)
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments1)
-        Me.grp_PlaceHolders.Items.Add(Me.mnu_grpBoxes_Recommendations)
-        Me.grp_PlaceHolders.Items.Add(Me.mnu_grpBoxes_Findings)
-        Me.grp_PlaceHolders.Items.Add(Me.grpPullouts_mnu01)
-        Me.grp_PlaceHolders.Items.Add(Me.grpReport_mnu_CaseStudies)
-        Me.grp_PlaceHolders.Items.Add(Me.Separator37)
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments16)
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments33)
-        Me.grp_PlaceHolders.Items.Add(Me.grpStylesRpt_mnu_tbls_00)
-        Me.grp_PlaceHolders.Items.Add(Me.Separator38)
-        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_btn_buildCustomTable)
-        Me.grp_PlaceHolders.Items.Add(Me.grpTbl_Styles)
-        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_TableTextStyle)
-        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments4)
-        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_AllStyles_small)
-        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_TableTextStyle_small)
-        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_TblPlaceholders)
-        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_SourceAndNote)
-        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_DeleteTable)
-        Me.grp_PlaceHolders.Label = "Placeholders"
-        Me.grp_PlaceHolders.Name = "grp_PlaceHolders"
-        '
-        'Separator37
-        '
-        Me.Separator37.Name = "Separator37"
-        '
-        'Separator38
-        '
-        Me.Separator38.Name = "Separator38"
-        '
-        'grp_special_AATableFormatting
-        '
-        Me.grp_special_AATableFormatting.Items.Add(Me.tbPlh_mnu_convertPlhToHalfPage)
-        Me.grp_special_AATableFormatting.Items.Add(Me.Separator69)
-        Me.grp_special_AATableFormatting.Items.Add(Me.tbPlh_mnu_rapidFormat)
-        Me.grp_special_AATableFormatting.Items.Add(Me.Separator70)
-        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_editColumns)
-        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_editRows)
-        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_AATableactions)
-        Me.grp_special_AATableFormatting.Items.Add(Me.Separator71)
-        Me.grp_special_AATableFormatting.Items.Add(Me.grp_Plh_TableColumns_mnu_more)
-        Me.grp_special_AATableFormatting.Label = "Special AA Table Formatting"
-        Me.grp_special_AATableFormatting.Name = "grp_special_AATableFormatting"
-        '
-        'Separator69
-        '
-        Me.Separator69.Name = "Separator69"
-        '
-        'Separator70
-        '
-        Me.Separator70.Name = "Separator70"
-        '
-        'Separator71
-        '
-        Me.Separator71.Name = "Separator71"
-        '
-        'grp_floatingPlaceholders
-        '
-        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_Handling)
-        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_convertToInline_findAllFloatingTables_2)
-        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_convertToInline)
-        Me.grp_floatingPlaceholders.Label = "Floating Placeholders"
-        Me.grp_floatingPlaceholders.Name = "grp_floatingPlaceholders"
-        '
-        'grp_Plh_miscPlaceholders
-        '
-        Me.grp_Plh_miscPlaceholders.Items.Add(Me.grpPicts_PasteAsPic)
-        Me.grp_Plh_miscPlaceholders.Items.Add(Me.grpEquations_Numbered)
-        Me.grp_Plh_miscPlaceholders.Label = "Miscellaneous Functions"
-        Me.grp_Plh_miscPlaceholders.Name = "grp_Plh_miscPlaceholders"
-        '
-        'tab_aa_PagesAndSections
-        '
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_CoversAndTOC)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_ImagePanels)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_Report)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_Appendix)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_sectOptions)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_CoveringLetter)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grp_WhatsNew)
-        Me.tab_aa_PagesAndSections.Groups.Add(Me.grp_Fixes)
-        Me.tab_aa_PagesAndSections.KeyTip = "JP"
-        Me.tab_aa_PagesAndSections.Label = "Pages and Sections"
-        Me.tab_aa_PagesAndSections.Name = "tab_aa_PagesAndSections"
-        Me.tab_aa_PagesAndSections.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
-        '
-        'grpRpt_CoversAndTOC
-        '
-        Me.grpRpt_CoversAndTOC.Items.Add(Me.gal_CoverPages)
-        Me.grpRpt_CoversAndTOC.Items.Add(Me.grpCntsPages)
-        Me.grpRpt_CoversAndTOC.Items.Add(Me.grpCoversToc_mnu2)
-        Me.grpRpt_CoversAndTOC.Label = "Covers and TOC"
-        Me.grpRpt_CoversAndTOC.Name = "grpRpt_CoversAndTOC"
-        '
-        'grpRpt_ImagePanels
-        '
-        Me.grpRpt_ImagePanels.Items.Add(Me.grpCoversToc_mnu_Images)
-        Me.grpRpt_ImagePanels.Items.Add(Me.grpImageHandling_mnu_ImgSection)
-        Me.grpRpt_ImagePanels.Items.Add(Me.grpImageHandling_mnu_FillBackPanel)
-        Me.grpRpt_ImagePanels.Label = "Image Panels"
-        Me.grpRpt_ImagePanels.Name = "grpRpt_ImagePanels"
-        '
-        'grpRpt_Report
-        '
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_btn_GlossaryAndAbbreviations_bblk)
-        Me.grpRpt_Report.Items.Add(Me.grpReport_btn_newDivider_Chpt_bblk)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_CreateExecSummary)
-        Me.grpRpt_Report.Items.Add(Me.Separator2)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_CreateRpt)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_NewChapter)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_Bibliography)
-        Me.grpRpt_Report.Items.Add(Me.grpReport_btn_ToggleView)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_RefreshDocument)
-        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_ApplyColour)
-        Me.grpRpt_Report.Label = "Report"
-        Me.grpRpt_Report.Name = "grpRpt_Report"
-        '
-        'Separator2
-        '
-        Me.Separator2.Name = "Separator2"
-        '
-        'grpRpt_Appendix
-        '
-        Me.grpRpt_Appendix.Items.Add(Me.grpAppendix_mnu01)
-        Me.grpRpt_Appendix.Items.Add(Me.grpReport_mnu_NewAppAtt)
-        Me.grpRpt_Appendix.Label = "Appendix"
-        Me.grpRpt_Appendix.Name = "grpRpt_Appendix"
-        '
-        'grpRpt_sectOptions
-        '
-        Me.grpRpt_sectOptions.Items.Add(Me.mnuCloseDocuments000)
-        Me.grpRpt_sectOptions.Items.Add(Me.grpRpt_sectOptions_btn_delSection)
-        Me.grpRpt_sectOptions.Items.Add(Me.grpOther_mnuHFS)
-        Me.grpRpt_sectOptions.Items.Add(Me.grpSectOptions_mnu_ResetLndPrt)
-        Me.grpRpt_sectOptions.Items.Add(Me.grpSectOptions_mnu_ResetResizeLandscape)
-        Me.grpRpt_sectOptions.Items.Add(Me.mnu_grpReport_Columns)
-        Me.grpRpt_sectOptions.Label = "Other Section Options"
-        Me.grpRpt_sectOptions.Name = "grpRpt_sectOptions"
-        '
-        'grpRpt_CoveringLetter
-        '
-        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_insertLetter)
-        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_insertMemo)
-        Me.grpRpt_CoveringLetter.Items.Add(Me.grpCoveringLetter_mnu6)
-        Me.grpRpt_CoveringLetter.Items.Add(Me.mnuCloseDocuments11)
-        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_delReport)
-        Me.grpRpt_CoveringLetter.Label = "Templates"
-        Me.grpRpt_CoveringLetter.Name = "grpRpt_CoveringLetter"
-        '
-        'grp_WhatsNew
-        '
-        Me.grp_WhatsNew.Items.Add(Me.grpWhatsNew_Form)
-        Me.grp_WhatsNew.Label = "What's new"
-        Me.grp_WhatsNew.Name = "grp_WhatsNew"
-        '
-        'grp_Fixes
-        '
-        Me.grp_Fixes.Items.Add(Me.grpFixes_Repairs)
-        Me.grp_Fixes.Items.Add(Me.mnu_Pagination)
-        Me.grp_Fixes.Items.Add(Me.grpFixes_mnu_Other)
-        Me.grp_Fixes.Label = "Fixes"
-        Me.grp_Fixes.Name = "grp_Fixes"
-        '
-        'tab_aa_Finalise
-        '
-        Me.tab_aa_Finalise.Groups.Add(Me.grp_WaterMarks)
-        Me.tab_aa_Finalise.Groups.Add(Me.grp_PgNumMgmnt)
-        Me.tab_aa_Finalise.Groups.Add(Me.grp_Finalise)
-        Me.tab_aa_Finalise.Groups.Add(Me.grpWCAG)
-        Me.tab_aa_Finalise.Groups.Add(Me.grpRbn_Mgmnt)
-        Me.tab_aa_Finalise.Groups.Add(Me.grpTst_LoadFromWeb)
-        Me.tab_aa_Finalise.Groups.Add(Me.grpMetaData)
-        Me.tab_aa_Finalise.Groups.Add(Me.grpTestTools)
-        Me.tab_aa_Finalise.KeyTip = "JF"
-        Me.tab_aa_Finalise.Label = "Finalise"
-        Me.tab_aa_Finalise.Name = "tab_aa_Finalise"
-        Me.tab_aa_Finalise.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
-        '
-        'grp_WaterMarks
-        '
-        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu03)
-        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu01)
-        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu02)
-        Me.grp_WaterMarks.KeyTip = "N"
-        Me.grp_WaterMarks.Label = "WaterMarks"
-        Me.grp_WaterMarks.Name = "grp_WaterMarks"
-        '
-        'grp_PgNumMgmnt
-        '
-        Me.grp_PgNumMgmnt.Items.Add(Me.tabFin_mnu_PageNumFormatting)
-        Me.grp_PgNumMgmnt.Items.Add(Me.tabFin_mnu_PgNumMgmnt_ReNum)
-        Me.grp_PgNumMgmnt.Label = "Page Numbering"
-        Me.grp_PgNumMgmnt.Name = "grp_PgNumMgmnt"
-        '
-        'grp_Finalise
-        '
-        Me.grp_Finalise.Items.Add(Me.grp_Finalise_mnu01)
-        Me.grp_Finalise.Label = "Finalise"
-        Me.grp_Finalise.Name = "grp_Finalise"
-        '
-        'grpWCAG
-        '
-        Me.grpWCAG.Items.Add(Me.tabFin_mnu_AccessibilityTools)
-        Me.grpWCAG.Items.Add(Me.grpReport_PlH_convertToInline_findAllFloatingTables)
-        Me.grpWCAG.Label = "Accessible document support"
-        Me.grpWCAG.Name = "grpWCAG"
-        '
-        'grpRbn_Mgmnt
-        '
-        Me.grpRbn_Mgmnt.Items.Add(Me.grpRbn_Mgmnt_mnu_00)
-        Me.grpRbn_Mgmnt.Label = "Ribbon Mgmnt"
-        Me.grpRbn_Mgmnt.Name = "grpRbn_Mgmnt"
-        '
-        'grpTst_LoadFromWeb
-        '
-        Me.grpTst_LoadFromWeb.Items.Add(Me.grpRbn_Downloads_mnu_00)
-        Me.grpTst_LoadFromWeb.Label = "Download support files"
-        Me.grpTst_LoadFromWeb.Name = "grpTst_LoadFromWeb"
-        '
-        'grpMetaData
-        '
-        Me.grpMetaData.Items.Add(Me.grpMetaData_Remove_FromDoc)
-        Me.grpMetaData.Label = "File security"
-        Me.grpMetaData.Name = "grpMetaData"
-        '
-        'grpTestTools
-        '
-        Me.grpTestTools.Items.Add(Me.grpTest_pgNum_getTagStyleMap)
-        Me.grpTestTools.Label = "User level test tools"
-        Me.grpTestTools.Name = "grpTestTools"
-        '
-        'tab_aa_Home
-        '
-        Me.tab_aa_Home.Groups.Add(Me.grp_AA_ThemeandHome)
-        Me.tab_aa_Home.Groups.Add(Me.grp_buildDocuments)
-        Me.tab_aa_Home.Groups.Add(Me.grpTest)
-        Me.tab_aa_Home.Groups.Add(Me.grp_SwBuild)
-        Me.tab_aa_Home.Groups.Add(Me.Group2)
-        Me.tab_aa_Home.KeyTip = "JT"
-        Me.tab_aa_Home.Label = "AA Home Tab"
-        Me.tab_aa_Home.Name = "tab_aa_Home"
-        Me.tab_aa_Home.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabHome")
-        '
-        'grp_AA_ThemeandHome
-        '
-        Me.grp_AA_ThemeandHome.DialogLauncher = RibbonDialogLauncherImpl1
-        Me.grp_AA_ThemeandHome.Items.Add(Me.Menu1)
-        Me.grp_AA_ThemeandHome.Items.Add(Me.tabThms_mnu_resetStyles1)
-        Me.grp_AA_ThemeandHome.Items.Add(Me.btn_colorPicker)
-        Me.grp_AA_ThemeandHome.Label = "ACIl Allen Theme"
-        Me.grp_AA_ThemeandHome.Name = "grp_AA_ThemeandHome"
-        '
-        'grp_buildDocuments
-        '
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_mnu_CreateReport)
-        Me.grp_buildDocuments.Items.Add(Me.Separator90)
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_grpLetter_standaloneLetter)
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_grpLetter_standaloneMemo)
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_mnu_contactDetails)
-        Me.grp_buildDocuments.Items.Add(Me.Separator91)
-        Me.grp_buildDocuments.Items.Add(Me.btn_update_Fields)
-        Me.grp_buildDocuments.Items.Add(Me.Separator95)
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_btn_ToggleView)
-        Me.grp_buildDocuments.Items.Add(Me.Separator94)
-        Me.grp_buildDocuments.Items.Add(Me.tbHome_btn_Help)
-        Me.grp_buildDocuments.Label = "AA Home Tools"
-        Me.grp_buildDocuments.Name = "grp_buildDocuments"
-        '
-        'Separator90
-        '
-        Me.Separator90.Name = "Separator90"
-        '
-        'Separator91
-        '
-        Me.Separator91.Name = "Separator91"
-        '
-        'Separator95
-        '
-        Me.Separator95.Name = "Separator95"
-        '
-        'Separator94
-        '
-        Me.Separator94.Name = "Separator94"
-        '
-        'grpTest
-        '
-        Me.grpTest.Items.Add(Me.grpTest_btn_cloneDoc)
-        Me.grpTest.Items.Add(Me.grpTest_btn_getTimeStamp)
-        Me.grpTest.Items.Add(Me.grpSectOptions_sect_InsertSection_InFront)
-        Me.grpTest.Items.Add(Me.grpSectOptions_sect_InsertSection_Behind)
-        Me.grpTest.Label = "Test Group"
-        Me.grpTest.Name = "grpTest"
-        Me.grpTest.Visible = False
-        '
-        'grp_SwBuild
-        '
-        Me.grp_SwBuild.Items.Add(Me.grpRpt_btn_GlossaryAndAbbreviations)
-        Me.grp_SwBuild.Items.Add(Me.grpReport_btn_newDivider_Chpt)
-        Me.grp_SwBuild.Items.Add(Me.Menu5)
-        Me.grp_SwBuild.Items.Add(Me.Menu2df)
-        Me.grp_SwBuild.Items.Add(Me.Menu2)
-        Me.grp_SwBuild.Items.Add(Me.Menu6)
-        Me.grp_SwBuild.Items.Add(Me.Menu4)
-        Me.grp_SwBuild.Items.Add(Me.grpLetters_mnu_swBuilds)
-        Me.grp_SwBuild.Label = "Software Build Options"
-        Me.grp_SwBuild.Name = "grp_SwBuild"
-        Me.grp_SwBuild.Visible = False
-        '
-        'Group2
-        '
-        Me.Group2.Items.Add(Me.btn_ApplyStdTheme_Manually)
-        Me.Group2.Items.Add(Me.mnu_makeStyles)
-        Me.Group2.Label = "Group2"
-        Me.Group2.Name = "Group2"
-        Me.Group2.Visible = False
-        '
         'mnu_SetTheme
         '
         Me.mnu_SetTheme.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -1239,6 +815,16 @@
         Me.xbtn_mnuThemes_PGSToggle.OfficeImageId = "ThemesGallery"
         Me.xbtn_mnuThemes_PGSToggle.ShowImage = True
         '
+        'grpStyles_CoverPage
+        '
+        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_StyleSet)
+        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading2_ES)
+        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading3_ES)
+        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading4_ES)
+        Me.grpStyles_CoverPage.Items.Add(Me.grpStylesES_Heading5_ES)
+        Me.grpStyles_CoverPage.Label = "Exec Sum"
+        Me.grpStyles_CoverPage.Name = "grpStyles_CoverPage"
+        '
         'grpStylesES_StyleSet
         '
         Me.grpStylesES_StyleSet.KeyTip = "ES"
@@ -1282,6 +868,18 @@
         Me.grpStylesES_Heading5_ES.OfficeImageId = "BevelShapeGallery"
         Me.grpStylesES_Heading5_ES.ShowImage = True
         Me.grpStylesES_Heading5_ES.SuperTip = """ES Heading 5 style - only use in the Executive Summary"""
+        '
+        'grpStyles_Report
+        '
+        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_StyleSet)
+        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading2_Rpt)
+        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading3_Rpt)
+        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading4_Rpt)
+        Me.grpStyles_Report.Items.Add(Me.grpStylesRpt_Heading5_Rpt)
+        Me.grpStyles_Report.Items.Add(Me.Separator5)
+        Me.grpStyles_Report.Items.Add(Me.grpStyles_mnu_Heading3Numbering)
+        Me.grpStyles_Report.Label = "Report"
+        Me.grpStyles_Report.Name = "grpStyles_Report"
         '
         'grpStylesRpt_StyleSet
         '
@@ -1329,6 +927,10 @@
         Me.grpStylesRpt_Heading5_Rpt.ShowImage = True
         Me.grpStylesRpt_Heading5_Rpt.SuperTip = """Heading 5  style - use in the 'Chapter' parts of the report"""
         '
+        'Separator5
+        '
+        Me.Separator5.Name = "Separator5"
+        '
         'grpStyles_mnu_Heading3Numbering
         '
         Me.grpStyles_mnu_Heading3Numbering.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -1358,6 +960,16 @@
         Me.grpStyles_mnu_Heading3Numbering_btn_off.Name = "grpStyles_mnu_Heading3Numbering_btn_off"
         Me.grpStyles_mnu_Heading3Numbering_btn_off.OfficeImageId = "BevelShapeGallery"
         Me.grpStyles_mnu_Heading3Numbering_btn_off.ShowImage = True
+        '
+        'grpStyles_NoNum
+        '
+        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_HeadingNoNum_StyleSet)
+        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading2NoNum_Rpt)
+        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading3NoNum_Rpt)
+        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading4NoNum_Rpt)
+        Me.grpStyles_NoNum.Items.Add(Me.grpStylesRpt_Heading5NoNum_Rpt)
+        Me.grpStyles_NoNum.Label = "Use Anywhere"
+        Me.grpStyles_NoNum.Name = "grpStyles_NoNum"
         '
         'grpStylesRpt_HeadingNoNum_StyleSet
         '
@@ -1400,6 +1012,17 @@
         Me.grpStylesRpt_Heading5NoNum_Rpt.Name = "grpStylesRpt_Heading5NoNum_Rpt"
         Me.grpStylesRpt_Heading5NoNum_Rpt.OfficeImageId = "BevelShapeGallery"
         Me.grpStylesRpt_Heading5NoNum_Rpt.ShowImage = True
+        '
+        'grpStyles_Appendices
+        '
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_StyleSet)
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading1_App)
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading2_App)
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading3_App)
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading4_App)
+        Me.grpStyles_Appendices.Items.Add(Me.grpStylesApp_Heading5_App)
+        Me.grpStyles_Appendices.Label = "Appendix / Attachment"
+        Me.grpStyles_Appendices.Name = "grpStyles_Appendices"
         '
         'grpStylesApp_StyleSet
         '
@@ -1467,6 +1090,16 @@
         Me.grpStylesApp_Heading5_App.SuperTip = "Appendix Heading 5 style - use in Appendix/Attachment only"
         Me.grpStylesApp_Heading5_App.Tag = ""
         '
+        'grpStyles_Text
+        '
+        Me.grpStyles_Text.Items.Add(Me.grpStylesText_BodyText)
+        Me.grpStyles_Text.Items.Add(Me.grpStylesRpt_Intro)
+        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_Quote)
+        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_QuoteBlt)
+        Me.grpStyles_Text.Items.Add(Me.grpStylesOther_QuoteSource)
+        Me.grpStyles_Text.Label = "Text"
+        Me.grpStyles_Text.Name = "grpStyles_Text"
+        '
         'grpStylesText_BodyText
         '
         Me.grpStylesText_BodyText.KeyTip = "TB"
@@ -1518,6 +1151,18 @@
         Me.grpStylesOther_QuoteSource.ShowImage = True
         Me.grpStylesOther_QuoteSource.SuperTip = "Quote source style - right aligns and italicizes quote source text"
         '
+        'grpStyles_Lists
+        '
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List1)
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List2)
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_List3)
+        Me.grpStyles_Lists.Items.Add(Me.Separator55)
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber1)
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber2)
+        Me.grpStyles_Lists.Items.Add(Me.grpStylesLists_ListNumber3)
+        Me.grpStyles_Lists.Label = "Lists"
+        Me.grpStyles_Lists.Name = "grpStyles_Lists"
+        '
         'grpStylesLists_List1
         '
         Me.grpStylesLists_List1.KeyTip = "L1"
@@ -1546,6 +1191,10 @@
         Me.grpStylesLists_List3.ScreenTip = "List Bullet 3"
         Me.grpStylesLists_List3.ShowImage = True
         Me.grpStylesLists_List3.SuperTip = "List bullet level 3 style for the body of the report"
+        '
+        'Separator55
+        '
+        Me.Separator55.Name = "Separator55"
         '
         'grpStylesLists_ListNumber1
         '
@@ -1576,6 +1225,12 @@
         Me.grpStylesLists_ListNumber3.ScreenTip = "List Number 3"
         Me.grpStylesLists_ListNumber3.ShowImage = True
         Me.grpStylesLists_ListNumber3.SuperTip = "List number 3 style"
+        '
+        'grpStyles_Emphasis
+        '
+        Me.grpStyles_Emphasis.Items.Add(Me.tbStyles_mnu_Emphasis)
+        Me.grpStyles_Emphasis.Label = "Emphasis"
+        Me.grpStyles_Emphasis.Name = "grpStyles_Emphasis"
         '
         'tbStyles_mnu_Emphasis
         '
@@ -1625,6 +1280,14 @@
         Me.grpPullouts_emphasisBox_TextStyle_Right_2.SuperTip = "Will apply the 'Emphasis Text (Right)' style to the selected paragraph. This styl" &
     "e is right justified... This can be used in documents that need to be 'Accessibl" &
     "e'"
+        '
+        'grpStyles_resetStyles
+        '
+        Me.grpStyles_resetStyles.Items.Add(Me.grpStylesTools_to_PrintDefault)
+        Me.grpStyles_resetStyles.Items.Add(Me.grpStylesTools_to_DisplayDefault)
+        Me.grpStyles_resetStyles.Items.Add(Me.tbStyles_grpResetStyles_mnu_ResetStyles)
+        Me.grpStyles_resetStyles.Label = "Reset Styles"
+        Me.grpStyles_resetStyles.Name = "grpStyles_resetStyles"
         '
         'grpStylesTools_to_PrintDefault
         '
@@ -1683,6 +1346,12 @@
         Me.tabStyles_btn_resetStylesForRptBrf.OfficeImageId = "BevelShapeGallery"
         Me.tabStyles_btn_resetStylesForRptBrf.ShowImage = True
         '
+        'grpStyles_resetCaptions
+        '
+        Me.grpStyles_resetCaptions.Items.Add(Me.grpStylesTools_resetCaptions)
+        Me.grpStyles_resetCaptions.Label = "Reset Captions"
+        Me.grpStyles_resetCaptions.Name = "grpStyles_resetCaptions"
+        '
         'grpStylesTools_resetCaptions
         '
         Me.grpStylesTools_resetCaptions.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -1695,6 +1364,43 @@
         Me.grpStylesTools_resetCaptions.SuperTip = "This function refreshes the Acil Allen custom captions in the current document. U" &
     "se this function if you think you are missing a caption that you want to use for" &
     " cross referencing"
+        '
+        'tab_aa_Placeholders
+        '
+        Me.tab_aa_Placeholders.Groups.Add(Me.grp_PlaceHolders)
+        Me.tab_aa_Placeholders.Groups.Add(Me.grp_special_AATableFormatting)
+        Me.tab_aa_Placeholders.Groups.Add(Me.grp_floatingPlaceholders)
+        Me.tab_aa_Placeholders.Groups.Add(Me.grp_Plh_miscPlaceholders)
+        Me.tab_aa_Placeholders.KeyTip = "JL"
+        Me.tab_aa_Placeholders.Label = "Placeholders"
+        Me.tab_aa_Placeholders.Name = "tab_aa_Placeholders"
+        Me.tab_aa_Placeholders.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
+        '
+        'grp_PlaceHolders
+        '
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments161)
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments2233)
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments1)
+        Me.grp_PlaceHolders.Items.Add(Me.mnu_grpBoxes_Recommendations)
+        Me.grp_PlaceHolders.Items.Add(Me.mnu_grpBoxes_Findings)
+        Me.grp_PlaceHolders.Items.Add(Me.grpPullouts_mnu01)
+        Me.grp_PlaceHolders.Items.Add(Me.grpReport_mnu_CaseStudies)
+        Me.grp_PlaceHolders.Items.Add(Me.Separator37)
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments16)
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments33)
+        Me.grp_PlaceHolders.Items.Add(Me.grpStylesRpt_mnu_tbls_00)
+        Me.grp_PlaceHolders.Items.Add(Me.Separator38)
+        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_btn_buildCustomTable)
+        Me.grp_PlaceHolders.Items.Add(Me.grpTbl_Styles)
+        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_TableTextStyle)
+        Me.grp_PlaceHolders.Items.Add(Me.mnuCloseDocuments4)
+        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_AllStyles_small)
+        Me.grp_PlaceHolders.Items.Add(Me.grpTbls_TableTextStyle_small)
+        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_TblPlaceholders)
+        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_SourceAndNote)
+        Me.grp_PlaceHolders.Items.Add(Me.grpPlh_mnu_DeleteTable)
+        Me.grp_PlaceHolders.Label = "Placeholders"
+        Me.grp_PlaceHolders.Name = "grp_PlaceHolders"
         '
         'mnuCloseDocuments161
         '
@@ -2195,6 +1901,10 @@
         Me.grpReport_mnu_CaseStudies_CaseStudyHeading.ShowImage = True
         Me.grpReport_mnu_CaseStudies_CaseStudyHeading.SuperTip = """Will apply the case study numbered caption heading to the selected paragraphs"""
         '
+        'Separator37
+        '
+        Me.Separator37.Name = "Separator37"
+        '
         'mnuCloseDocuments16
         '
         Me.mnuCloseDocuments16.Items.Add(Me.grpFigures_Figure)
@@ -2407,6 +2117,10 @@
         Me.grpTbls_setTableTextCustomColour.ShowImage = True
         Me.grpTbls_setTableTextCustomColour.SuperTip = """Shows a dialog that allows the user to apply a custom colour to the selected tex" &
     "t (table text or general body text)."""
+        '
+        'Separator38
+        '
+        Me.Separator38.Name = "Separator38"
         '
         'grpPlh_btn_buildCustomTable
         '
@@ -3195,6 +2909,20 @@
         Me.grpTblsPlh_DeleteTable.SuperTip = "This will delete the currently selected Table and will also update the document's" &
     " 'Table Of Figures', making it slower than the first option"
         '
+        'grp_special_AATableFormatting
+        '
+        Me.grp_special_AATableFormatting.Items.Add(Me.tbPlh_mnu_convertPlhToHalfPage)
+        Me.grp_special_AATableFormatting.Items.Add(Me.Separator69)
+        Me.grp_special_AATableFormatting.Items.Add(Me.tbPlh_mnu_rapidFormat)
+        Me.grp_special_AATableFormatting.Items.Add(Me.Separator70)
+        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_editColumns)
+        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_editRows)
+        Me.grp_special_AATableFormatting.Items.Add(Me.grpAATbls_mnu_AATableactions)
+        Me.grp_special_AATableFormatting.Items.Add(Me.Separator71)
+        Me.grp_special_AATableFormatting.Items.Add(Me.grp_Plh_TableColumns_mnu_more)
+        Me.grp_special_AATableFormatting.Label = "Special AA Table Formatting"
+        Me.grp_special_AATableFormatting.Name = "grp_special_AATableFormatting"
+        '
         'tbPlh_mnu_convertPlhToHalfPage
         '
         Me.tbPlh_mnu_convertPlhToHalfPage.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -3241,6 +2969,10 @@
         Me.grpTbl_mnu_AAPlh_Reset_to_FullColumn.SuperTip = "Place your cursor in an existing formatted Placeholder. &#13;&#13;This function w" &
     "ill adjust the Placeholder to inline and its &#13;&#13;width will be adjusted to" &
     " the full width of it's parent column."
+        '
+        'Separator69
+        '
+        Me.Separator69.Name = "Separator69"
         '
         'tbPlh_mnu_rapidFormat
         '
@@ -3384,6 +3116,10 @@
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP.ScreenTip = "Caption to AP"
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP.ShowImage = True
         Me.grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP.SuperTip = resources.GetString("grpBoxes_mnu_rapidFormat_EncapTbl_Force_AP.SuperTip")
+        '
+        'Separator70
+        '
+        Me.Separator70.Name = "Separator70"
         '
         'grpAATbls_mnu_editColumns
         '
@@ -3535,6 +3271,10 @@
         Me.grpTblsEdit_UndoTableAction.ShowImage = True
         Me.grpTblsEdit_UndoTableAction.SuperTip = resources.GetString("grpTblsEdit_UndoTableAction.SuperTip")
         '
+        'Separator71
+        '
+        Me.Separator71.Name = "Separator71"
+        '
         'grp_Plh_TableColumns_mnu_more
         '
         Me.grp_Plh_TableColumns_mnu_more.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -3586,6 +3326,14 @@
         Me.grpTblsEdit_Split_Table.SuperTip = "This function will split a AA Encapsulated Table into three parts. That is, the t" &
     "op caption row, the body and the bottom source row... Place your cursor in the t" &
     "able of interest."
+        '
+        'grp_floatingPlaceholders
+        '
+        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_Handling)
+        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_convertToInline_findAllFloatingTables_2)
+        Me.grp_floatingPlaceholders.Items.Add(Me.grpReport_PlH_convertToInline)
+        Me.grp_floatingPlaceholders.Label = "Floating Placeholders"
+        Me.grp_floatingPlaceholders.Name = "grp_floatingPlaceholders"
         '
         'grpReport_PlH_Handling
         '
@@ -3724,6 +3472,13 @@
     " the 'Placeholder Map' tool to find and convert all floating Placeholders to inl" &
     "ine."
         '
+        'grp_Plh_miscPlaceholders
+        '
+        Me.grp_Plh_miscPlaceholders.Items.Add(Me.grpPicts_PasteAsPic)
+        Me.grp_Plh_miscPlaceholders.Items.Add(Me.grpEquations_Numbered)
+        Me.grp_Plh_miscPlaceholders.Label = "Miscellaneous Functions"
+        Me.grp_Plh_miscPlaceholders.Name = "grp_Plh_miscPlaceholders"
+        '
         'grpPicts_PasteAsPic
         '
         Me.grpPicts_PasteAsPic.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -3745,6 +3500,29 @@
         Me.grpEquations_Numbered.ScreenTip = "Numbered Equation"
         Me.grpEquations_Numbered.ShowImage = True
         Me.grpEquations_Numbered.SuperTip = resources.GetString("grpEquations_Numbered.SuperTip")
+        '
+        'tab_aa_PagesAndSections
+        '
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_CoversAndTOC)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_ImagePanels)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_Report)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_Appendix)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_sectOptions)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grpRpt_CoveringLetter)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grp_WhatsNew)
+        Me.tab_aa_PagesAndSections.Groups.Add(Me.grp_Fixes)
+        Me.tab_aa_PagesAndSections.KeyTip = "JP"
+        Me.tab_aa_PagesAndSections.Label = "Pages and Sections"
+        Me.tab_aa_PagesAndSections.Name = "tab_aa_PagesAndSections"
+        Me.tab_aa_PagesAndSections.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
+        '
+        'grpRpt_CoversAndTOC
+        '
+        Me.grpRpt_CoversAndTOC.Items.Add(Me.gal_CoverPages)
+        Me.grpRpt_CoversAndTOC.Items.Add(Me.grpCntsPages)
+        Me.grpRpt_CoversAndTOC.Items.Add(Me.grpCoversToc_mnu2)
+        Me.grpRpt_CoversAndTOC.Label = "Covers and TOC"
+        Me.grpRpt_CoversAndTOC.Name = "grpRpt_CoversAndTOC"
         '
         'gal_CoverPages
         '
@@ -3964,6 +3742,14 @@
         Me.grpToc_TOC_update.OfficeImageId = "BevelShapeGallery"
         Me.grpToc_TOC_update.ScreenTip = "Update TOC"
         Me.grpToc_TOC_update.ShowImage = True
+        '
+        'grpRpt_ImagePanels
+        '
+        Me.grpRpt_ImagePanels.Items.Add(Me.grpCoversToc_mnu_Images)
+        Me.grpRpt_ImagePanels.Items.Add(Me.grpImageHandling_mnu_ImgSection)
+        Me.grpRpt_ImagePanels.Items.Add(Me.grpImageHandling_mnu_FillBackPanel)
+        Me.grpRpt_ImagePanels.Label = "Image Panels"
+        Me.grpRpt_ImagePanels.Name = "grpRpt_ImagePanels"
         '
         'grpCoversToc_mnu_Images
         '
@@ -4221,6 +4007,21 @@
         Me.mnu_SetBackPanel_to_BannerHeight.SuperTip = """Will set the image back panel height to the banner height used in the 'AA Brief'" &
     "."""
         '
+        'grpRpt_Report
+        '
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_btn_GlossaryAndAbbreviations_bblk)
+        Me.grpRpt_Report.Items.Add(Me.grpReport_btn_newDivider_Chpt_bblk)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_CreateExecSummary)
+        Me.grpRpt_Report.Items.Add(Me.Separator2)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_CreateRpt)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_NewChapter)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_Bibliography)
+        Me.grpRpt_Report.Items.Add(Me.grpReport_btn_ToggleView)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_RefreshDocument)
+        Me.grpRpt_Report.Items.Add(Me.grpRpt_mnu_ApplyColour)
+        Me.grpRpt_Report.Label = "Report"
+        Me.grpRpt_Report.Name = "grpRpt_Report"
+        '
         'grpRpt_btn_GlossaryAndAbbreviations_bblk
         '
         Me.grpRpt_btn_GlossaryAndAbbreviations_bblk.KeyTip = "RG"
@@ -4263,6 +4064,10 @@
         Me.grpExecSum_ExecSum_Grey_bblk.ShowImage = True
         Me.grpExecSum_ExecSum_Grey_bblk.SuperTip = """Inserts a formatted Executive Summary section with an image back panel set to rg" &
     "b(200, 200, 200)."""
+        '
+        'Separator2
+        '
+        Me.Separator2.Name = "Separator2"
         '
         'grpRpt_mnu_CreateRpt
         '
@@ -4561,6 +4366,13 @@
         Me.grpReport_mnu_CaseStudies_RecolourFooter_Reset.OfficeImageId = "TextBoxInsert"
         Me.grpReport_mnu_CaseStudies_RecolourFooter_Reset.ShowImage = True
         '
+        'grpRpt_Appendix
+        '
+        Me.grpRpt_Appendix.Items.Add(Me.grpAppendix_mnu01)
+        Me.grpRpt_Appendix.Items.Add(Me.grpReport_mnu_NewAppAtt)
+        Me.grpRpt_Appendix.Label = "Appendix"
+        Me.grpRpt_Appendix.Name = "grpRpt_Appendix"
+        '
         'grpAppendix_mnu01
         '
         Me.grpAppendix_mnu01.Image = Global.AA_GeneralReport_Addin.My.Resources.Resources.NewPart_TG
@@ -4625,6 +4437,17 @@
         Me.grpAppendix_newAppChapter_behind_bblk.ShowImage = True
         Me.grpAppendix_newAppChapter_behind_bblk.SuperTip = """Inserts a new App/Attsection behind the Section that contains the current cursor" &
     " position."""
+        '
+        'grpRpt_sectOptions
+        '
+        Me.grpRpt_sectOptions.Items.Add(Me.mnuCloseDocuments000)
+        Me.grpRpt_sectOptions.Items.Add(Me.grpRpt_sectOptions_btn_delSection)
+        Me.grpRpt_sectOptions.Items.Add(Me.grpOther_mnuHFS)
+        Me.grpRpt_sectOptions.Items.Add(Me.grpSectOptions_mnu_ResetLndPrt)
+        Me.grpRpt_sectOptions.Items.Add(Me.grpSectOptions_mnu_ResetResizeLandscape)
+        Me.grpRpt_sectOptions.Items.Add(Me.mnu_grpReport_Columns)
+        Me.grpRpt_sectOptions.Label = "Other Section Options"
+        Me.grpRpt_sectOptions.Name = "grpRpt_sectOptions"
         '
         'mnuCloseDocuments000
         '
@@ -5065,6 +4888,16 @@
         Me.grpReport_Columns_01.ShowImage = True
         Me.grpReport_Columns_01.SuperTip = """The current section will be setup with one column (i.e. a standard page)"""
         '
+        'grpRpt_CoveringLetter
+        '
+        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_insertLetter)
+        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_insertMemo)
+        Me.grpRpt_CoveringLetter.Items.Add(Me.grpCoveringLetter_mnu6)
+        Me.grpRpt_CoveringLetter.Items.Add(Me.mnuCloseDocuments11)
+        Me.grpRpt_CoveringLetter.Items.Add(Me.grpLetter_delReport)
+        Me.grpRpt_CoveringLetter.Label = "Templates"
+        Me.grpRpt_CoveringLetter.Name = "grpRpt_CoveringLetter"
+        '
         'grpLetter_insertLetter
         '
         Me.grpLetter_insertLetter.KeyTip = "LT"
@@ -5229,6 +5062,12 @@
         Me.grpLetter_delReport.SuperTip = "This function will delete all document sections after the first section, which is" &
     " only useful if you have attached a letter or Memo to an existing report."
         '
+        'grp_WhatsNew
+        '
+        Me.grp_WhatsNew.Items.Add(Me.grpWhatsNew_Form)
+        Me.grp_WhatsNew.Label = "What's new"
+        Me.grp_WhatsNew.Name = "grp_WhatsNew"
+        '
         'grpWhatsNew_Form
         '
         Me.grpWhatsNew_Form.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -5237,6 +5076,14 @@
         Me.grpWhatsNew_Form.OfficeImageId = "NewCustomButton"
         Me.grpWhatsNew_Form.ShowImage = True
         Me.grpWhatsNew_Form.SuperTip = resources.GetString("grpWhatsNew_Form.SuperTip")
+        '
+        'grp_Fixes
+        '
+        Me.grp_Fixes.Items.Add(Me.grpFixes_Repairs)
+        Me.grp_Fixes.Items.Add(Me.mnu_Pagination)
+        Me.grp_Fixes.Items.Add(Me.grpFixes_mnu_Other)
+        Me.grp_Fixes.Label = "Fixes"
+        Me.grp_Fixes.Name = "grp_Fixes"
         '
         'grpFixes_Repairs
         '
@@ -5344,6 +5191,30 @@
         Me.grpFixes_ScreenUpdatingOn.ScreenTip = "Screen Updating - On"
         Me.grpFixes_ScreenUpdatingOn.ShowImage = True
         Me.grpFixes_ScreenUpdatingOn.SuperTip = "Click this button to start screen updating."
+        '
+        'tab_aa_Finalise
+        '
+        Me.tab_aa_Finalise.Groups.Add(Me.grp_WaterMarks)
+        Me.tab_aa_Finalise.Groups.Add(Me.grp_PgNumMgmnt)
+        Me.tab_aa_Finalise.Groups.Add(Me.grp_Finalise)
+        Me.tab_aa_Finalise.Groups.Add(Me.grpWCAG)
+        Me.tab_aa_Finalise.Groups.Add(Me.grpRbn_Mgmnt)
+        Me.tab_aa_Finalise.Groups.Add(Me.grpTst_LoadFromWeb)
+        Me.tab_aa_Finalise.Groups.Add(Me.grpMetaData)
+        Me.tab_aa_Finalise.Groups.Add(Me.grpTestTools)
+        Me.tab_aa_Finalise.KeyTip = "JF"
+        Me.tab_aa_Finalise.Label = "Finalise"
+        Me.tab_aa_Finalise.Name = "tab_aa_Finalise"
+        Me.tab_aa_Finalise.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabInsert")
+        '
+        'grp_WaterMarks
+        '
+        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu03)
+        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu01)
+        Me.grp_WaterMarks.Items.Add(Me.grp_waterMark_mnu02)
+        Me.grp_WaterMarks.KeyTip = "N"
+        Me.grp_WaterMarks.Label = "WaterMarks"
+        Me.grp_WaterMarks.Name = "grp_WaterMarks"
         '
         'grp_waterMark_mnu03
         '
@@ -5696,6 +5567,13 @@
         Me.grp_waterMark_forceStat_StyleToDefault.SuperTip = "This button will reset the style used for the document status to it's default set" &
     "tings"
         '
+        'grp_PgNumMgmnt
+        '
+        Me.grp_PgNumMgmnt.Items.Add(Me.tabFin_mnu_PageNumFormatting)
+        Me.grp_PgNumMgmnt.Items.Add(Me.tabFin_mnu_PgNumMgmnt_ReNum)
+        Me.grp_PgNumMgmnt.Label = "Page Numbering"
+        Me.grp_PgNumMgmnt.Name = "grp_PgNumMgmnt"
+        '
         'tabFin_mnu_PageNumFormatting
         '
         Me.tabFin_mnu_PageNumFormatting.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -5811,6 +5689,12 @@
         Me.grp_PgNumMgmnt_ReNum_2Part.ShowImage = True
         Me.grp_PgNumMgmnt_ReNum_2Part.SuperTip = "Check here to ensure the body of this report is numbered using a 'Chapter-PageNum" &
     "' page number format"
+        '
+        'grp_Finalise
+        '
+        Me.grp_Finalise.Items.Add(Me.grp_Finalise_mnu01)
+        Me.grp_Finalise.Label = "Finalise"
+        Me.grp_Finalise.Name = "grp_Finalise"
         '
         'grp_Finalise_mnu01
         '
@@ -5950,6 +5834,13 @@
         Me.grpFixes_Repairs_delSpace1_atSentenceEnd.SuperTip = "Applies to whole document: At end of sentence, after fullstop, question mark or e" &
     "xclamation mark, replaces with 1 space only."
         '
+        'grpWCAG
+        '
+        Me.grpWCAG.Items.Add(Me.tabFin_mnu_AccessibilityTools)
+        Me.grpWCAG.Items.Add(Me.grpReport_PlH_convertToInline_findAllFloatingTables)
+        Me.grpWCAG.Label = "Accessible document support"
+        Me.grpWCAG.Name = "grpWCAG"
+        '
         'tabFin_mnu_AccessibilityTools
         '
         Me.tabFin_mnu_AccessibilityTools.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6088,6 +5979,12 @@
         Me.grpReport_PlH_convertToInline_findAllFloatingTables.ShowImage = True
         Me.grpReport_PlH_convertToInline_findAllFloatingTables.SuperTip = resources.GetString("grpReport_PlH_convertToInline_findAllFloatingTables.SuperTip")
         '
+        'grpRbn_Mgmnt
+        '
+        Me.grpRbn_Mgmnt.Items.Add(Me.grpRbn_Mgmnt_mnu_00)
+        Me.grpRbn_Mgmnt.Label = "Ribbon Mgmnt"
+        Me.grpRbn_Mgmnt.Name = "grpRbn_Mgmnt"
+        '
         'grpRbn_Mgmnt_mnu_00
         '
         Me.grpRbn_Mgmnt_mnu_00.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6110,6 +6007,12 @@
         'Separator54
         '
         Me.Separator54.Name = "Separator54"
+        '
+        'grpTst_LoadFromWeb
+        '
+        Me.grpTst_LoadFromWeb.Items.Add(Me.grpRbn_Downloads_mnu_00)
+        Me.grpTst_LoadFromWeb.Label = "Download support files"
+        Me.grpTst_LoadFromWeb.Name = "grpTst_LoadFromWeb"
         '
         'grpRbn_Downloads_mnu_00
         '
@@ -6231,6 +6134,12 @@
     "A web site."""
         Me.grpTst_LoadFromWeb_getTemplate.Visible = False
         '
+        'grpMetaData
+        '
+        Me.grpMetaData.Items.Add(Me.grpMetaData_Remove_FromDoc)
+        Me.grpMetaData.Label = "File security"
+        Me.grpMetaData.Name = "grpMetaData"
+        '
         'grpMetaData_Remove_FromDoc
         '
         Me.grpMetaData_Remove_FromDoc.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6242,6 +6151,12 @@
         Me.grpMetaData_Remove_FromDoc.ShowImage = True
         Me.grpMetaData_Remove_FromDoc.SuperTip = resources.GetString("grpMetaData_Remove_FromDoc.SuperTip")
         '
+        'grpTestTools
+        '
+        Me.grpTestTools.Items.Add(Me.grpTest_pgNum_getTagStyleMap)
+        Me.grpTestTools.Label = "User level test tools"
+        Me.grpTestTools.Name = "grpTestTools"
+        '
         'grpTest_pgNum_getTagStyleMap
         '
         Me.grpTest_pgNum_getTagStyleMap.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6252,6 +6167,27 @@
         Me.grpTest_pgNum_getTagStyleMap.ScreenTip = "Get Tag Style Map"
         Me.grpTest_pgNum_getTagStyleMap.ShowImage = True
         Me.grpTest_pgNum_getTagStyleMap.SuperTip = resources.GetString("grpTest_pgNum_getTagStyleMap.SuperTip")
+        '
+        'tab_aa_Home
+        '
+        Me.tab_aa_Home.Groups.Add(Me.grp_AA_ThemeandHome)
+        Me.tab_aa_Home.Groups.Add(Me.grp_buildDocuments)
+        Me.tab_aa_Home.Groups.Add(Me.grpTest)
+        Me.tab_aa_Home.Groups.Add(Me.grp_SwBuild)
+        Me.tab_aa_Home.Groups.Add(Me.Group2)
+        Me.tab_aa_Home.KeyTip = "JT"
+        Me.tab_aa_Home.Label = "AA Home Tab"
+        Me.tab_aa_Home.Name = "tab_aa_Home"
+        Me.tab_aa_Home.Position = Me.Factory.RibbonPosition.BeforeOfficeId("TabHome")
+        '
+        'grp_AA_ThemeandHome
+        '
+        Me.grp_AA_ThemeandHome.DialogLauncher = RibbonDialogLauncherImpl1
+        Me.grp_AA_ThemeandHome.Items.Add(Me.Menu1)
+        Me.grp_AA_ThemeandHome.Items.Add(Me.tabThms_mnu_resetStyles1)
+        Me.grp_AA_ThemeandHome.Items.Add(Me.btn_colorPicker)
+        Me.grp_AA_ThemeandHome.Label = "ACIl Allen Theme"
+        Me.grp_AA_ThemeandHome.Name = "grp_AA_ThemeandHome"
         '
         'Menu1
         '
@@ -6376,6 +6312,22 @@
         Me.btn_colorPicker.ShowImage = True
         Me.btn_colorPicker.Visible = False
         '
+        'grp_buildDocuments
+        '
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_mnu_CreateReport)
+        Me.grp_buildDocuments.Items.Add(Me.Separator90)
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_grpLetter_standaloneLetter)
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_grpLetter_standaloneMemo)
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_mnu_contactDetails)
+        Me.grp_buildDocuments.Items.Add(Me.Separator91)
+        Me.grp_buildDocuments.Items.Add(Me.btn_update_Fields)
+        Me.grp_buildDocuments.Items.Add(Me.Separator95)
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_btn_ToggleView)
+        Me.grp_buildDocuments.Items.Add(Me.Separator94)
+        Me.grp_buildDocuments.Items.Add(Me.tbHome_btn_Help)
+        Me.grp_buildDocuments.Label = "AA Home Tools"
+        Me.grp_buildDocuments.Name = "grp_buildDocuments"
+        '
         'tbHome_mnu_CreateReport
         '
         Me.tbHome_mnu_CreateReport.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6454,6 +6406,10 @@
         Me.btn_buildReport_Brf_SW.ShowImage = True
         Me.btn_buildReport_Brf_SW.SuperTip = "This is a software build. Takes longer, but less dependent on templates"
         Me.btn_buildReport_Brf_SW.Visible = False
+        '
+        'Separator90
+        '
+        Me.Separator90.Name = "Separator90"
         '
         'tbHome_grpLetter_standaloneLetter
         '
@@ -6544,6 +6500,10 @@
         Me.tbHome_mnu_contactDetails_memo.ShowImage = True
         Me.tbHome_mnu_contactDetails_memo.Visible = False
         '
+        'Separator91
+        '
+        Me.Separator91.Name = "Separator91"
+        '
         'btn_update_Fields
         '
         Me.btn_update_Fields.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6554,6 +6514,10 @@
         Me.btn_update_Fields.ShowImage = True
         Me.btn_update_Fields.SuperTip = "Will cause all automatic fields to update including TOC and TOF"
         '
+        'Separator95
+        '
+        Me.Separator95.Name = "Separator95"
+        '
         'tbHome_btn_ToggleView
         '
         Me.tbHome_btn_ToggleView.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6562,6 +6526,10 @@
         Me.tbHome_btn_ToggleView.OfficeImageId = "ContentControlBuildingBlockGallery"
         Me.tbHome_btn_ToggleView.ShowImage = True
         '
+        'Separator94
+        '
+        Me.Separator94.Name = "Separator94"
+        '
         'tbHome_btn_Help
         '
         Me.tbHome_btn_Help.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge
@@ -6569,6 +6537,16 @@
         Me.tbHome_btn_Help.Name = "tbHome_btn_Help"
         Me.tbHome_btn_Help.OfficeImageId = "Help"
         Me.tbHome_btn_Help.ShowImage = True
+        '
+        'grpTest
+        '
+        Me.grpTest.Items.Add(Me.grpTest_btn_cloneDoc)
+        Me.grpTest.Items.Add(Me.grpTest_btn_getTimeStamp)
+        Me.grpTest.Items.Add(Me.grpSectOptions_sect_InsertSection_InFront)
+        Me.grpTest.Items.Add(Me.grpSectOptions_sect_InsertSection_Behind)
+        Me.grpTest.Label = "Test Group"
+        Me.grpTest.Name = "grpTest"
+        Me.grpTest.Visible = False
         '
         'grpTest_btn_cloneDoc
         '
@@ -6599,6 +6577,20 @@
         Me.grpSectOptions_sect_InsertSection_Behind.Name = "grpSectOptions_sect_InsertSection_Behind"
         Me.grpSectOptions_sect_InsertSection_Behind.OfficeImageId = "BevelShapeGallery"
         Me.grpSectOptions_sect_InsertSection_Behind.ShowImage = True
+        '
+        'grp_SwBuild
+        '
+        Me.grp_SwBuild.Items.Add(Me.grpRpt_btn_GlossaryAndAbbreviations)
+        Me.grp_SwBuild.Items.Add(Me.grpReport_btn_newDivider_Chpt)
+        Me.grp_SwBuild.Items.Add(Me.Menu5)
+        Me.grp_SwBuild.Items.Add(Me.Menu2df)
+        Me.grp_SwBuild.Items.Add(Me.Menu2)
+        Me.grp_SwBuild.Items.Add(Me.Menu6)
+        Me.grp_SwBuild.Items.Add(Me.Menu4)
+        Me.grp_SwBuild.Items.Add(Me.grpLetters_mnu_swBuilds)
+        Me.grp_SwBuild.Label = "Software Build Options"
+        Me.grp_SwBuild.Name = "grp_SwBuild"
+        Me.grp_SwBuild.Visible = False
         '
         'grpRpt_btn_GlossaryAndAbbreviations
         '
@@ -6804,6 +6796,14 @@
         Me.grpLetter_insertMemo_swBuild.Name = "grpLetter_insertMemo_swBuild"
         Me.grpLetter_insertMemo_swBuild.OfficeImageId = "BevelShapeGallery"
         Me.grpLetter_insertMemo_swBuild.ShowImage = True
+        '
+        'Group2
+        '
+        Me.Group2.Items.Add(Me.btn_ApplyStdTheme_Manually)
+        Me.Group2.Items.Add(Me.mnu_makeStyles)
+        Me.Group2.Label = "Group2"
+        Me.Group2.Name = "Group2"
+        Me.Group2.Visible = False
         '
         'btn_ApplyStdTheme_Manually
         '

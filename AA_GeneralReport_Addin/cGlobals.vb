@@ -129,9 +129,8 @@ Public Class cGlobals
         Me.var_glb_style_tblCaption_Line2_Indent = 65.4                                 'This is the indent of the second line of the caption style
         '
         'Me.var_glb_style_tblCaption_Line2_Indent = 80.4                                'This is the indent of the second line of the caption style
-        'Me.glb_var_TemplatesDir_default = "C:\Templates"
-        'Me.glb_var_TemplatesDir_default = IO.Path.GetTempPath().TrimEnd("\"c, "/"c) + "aa_Documents"
-        Me.glb_var_TemplatesDir_default = IO.Path.GetTempPath() + "aa_Documents"        'IO.Path.GetTempPath() will return something like C:\Users\peter\AppData\Local\Temp\
+        Me.glb_var_TemplatesDir_default = "C:\Templates"
+        'Me.glb_var_TemplatesDir_default = IO.Path.GetTempPath() + "aa_Documents"        'IO.Path.GetTempPath() will return something like C:\Users\peter\AppData\Local\Temp\
 
         Me.glb_var_TemplatesDir_alt = Me.glb_getDir_documentsLocal()
         Me.glb_var_TemplateFileName = "AA GeneralReport.dotx"
@@ -1847,8 +1846,7 @@ finis:
     ''' <summary>
     ''' This method will determine if the document myDoc is a standard ACIL Allen
     ''' document, and as a consequence able to respond reliably to the ribbon functions.
-    ''' At the moment it checks to see if the attached template is the standard AA template.
-    ''' Later we might check for some other 'fingerprint'. Maybe styles??
+    ''' We check for some 'fingerprint' styles. Other styles??
     ''' </summary>
     ''' <param name="myDoc"></param>
     ''' <returns></returns>
@@ -1858,7 +1856,7 @@ finis:
         'rslt = Me.glb_doc_hasAAStdTemplate(myDoc)
         rslt = False
         '
-        If glb_style_Exists(myDoc, "tag_chapterBanner") And Me.glb_doc_hasAAStdTemplate(myDoc) Then
+        If glb_style_Exists(myDoc, "tag_chapterBanner") And glb_style_Exists(myDoc, "tag_coverPage") Then
             rslt = True
         End If
         'rslt = glb_style_Exists(myDoc, "tag_chapterBanner")         'Use this to test for AA Std document.. Could alsu use tag_aa_RptTestStyle_#?_00
@@ -1913,13 +1911,15 @@ finis:
     '
     ''' <summary>
     ''' Ths method will check the doc type (AA Std or not) of the current Active Document and 
-    ''' activate 'Pages and Sections' tab if its a ACIL Allen document, or the 'Home' tab if it is not
+    ''' activate 'Pages and Sections' tab if its a ACIL Allen document, or the 'Home' tab if it is not.
+    ''' If it is an ACIL Allen document, it will also attach the standard template to the document if it is not already attached.
     ''' </summary>
     ''' <param name="strTabId"></param>
     ''' <returns></returns>
     Public Function glb_doc_checkDocType_ActivateTab(Optional strTabId As String = "tab_aa_PagesAndSections") As Word.Document
         Dim myDoc As Word.Document
         Dim objCtrls As New cControlsMgr()
+        Dim tmpl As Word.Template
         'Dim rbn As rbn_aa_Addin00
         '
         myDoc = glb_get_wrdActiveDoc()
@@ -1932,11 +1932,20 @@ finis:
         '***
         '
         If Me.glb_doc_isAAStdDoc(Me.glb_get_wrdActiveDoc) Then
+            tmpl = glb_get_wrdActiveDoc.AttachedTemplate
+            Dim strLocalTmpl As String = glb_getTmpl_FullName()                 'Just so I can examine it
+            If Not (tmpl.FullName = glb_getTmpl_FullName()) Then
+                'If the attached template is not the AA Std template, then attach the AA Std template. This
+                'means it can be anywhere on anyone's machine... It caters for the scenario where the template
+                'location is migrated to C:\Users\<**>\AppData\Local\Temp\
+                glb_get_wrdActiveDoc.AttachedTemplate = glb_getTmpl_FullName()
+            End If
+
             objCtrls.ctrl_tabSet_Visibility("all")
             Globals.Ribbons.rbn_Styles.RibbonUI.ActivateTab(strTabId)
             'Globals.Ribbons.rbn_Styles.tab_aa_PagesAndSections
         Else
-            objCtrls.ctrl_tabSet_Visibility("all", False)
+                objCtrls.ctrl_tabSet_Visibility("all", False)
             Globals.Ribbons.rbn_Styles.RibbonUI.ActivateTab(objCtrls._strTabId_AAHome)
 
             'Globals.Ribbons.rbn_Styles.RibbonUI.ActivateTabMso("TabHome")

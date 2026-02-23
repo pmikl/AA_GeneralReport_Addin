@@ -43,12 +43,14 @@ Public Class ThisAddIn
         Dim targetPath As String = "C:\Templates\AA GeneralReport.dotx"
         Dim objPinned As New cWordPinnedList()
         '
-        If System.IO.File.Exists(targetPath) Then
-            System.IO.File.Delete(targetPath)
-            '
-            objPinned.pin_Remove_TemplateFromNewList(targetPath)
-            '
-        End If
+        ' objPinned.pin_Remove_TemplateFromNewList(targetPath)
+
+        '
+        'If System.IO.File.Exists(targetPath) Then
+        'System.IO.File.Delete(targetPath)
+        '
+        '
+        'End If
         '
         Me.strActualDirTemplates = objGlobals.glb_setDir_Templates()
         objFileMgr.file_set_templateFromResources(Me.strActualDirTemplates)
